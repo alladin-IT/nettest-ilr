@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013-2014 alladin-IT GmbH
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+    <string name="ifont_logo" translatable="false">a</string>
+    <string name="ifont_watch" translatable="false">b</string>
+    <string name="ifont_frequency" translatable="false">c</string>
+    <string name="ifont_system" translatable="false">d</string>
+    <string name="ifont_grid" translatable="false">e</string>
+    <string name="ifont_company" translatable="false">f</string>
+    <string name="ifont_device" translatable="false">g</string>
+    <string name="ifont_start" translatable="false">h</string>
+    <string name="ifont_history" translatable="false">i</string>
+    <string name="ifont_map" translatable="false">j</string>
+    <string name="ifont_search" translatable="false">k</string>
+    <string name="ifont_statistics" translatable="false">l</string>
+    <string name="ifont_help" translatable="false">m</string>
+    <string name="ifont_opendata" translatable="false">n</string>
+    <string name="ifont_about" translatable="false">o</string>
+    <string name="ifont_settings" translatable="false">p</string>
+    <string name="ifont_ping" translatable="false">q</string>
+    <string name="ifont_down" translatable="false">r</string>
+    <string name="ifont_up" translatable="false">s</string>
+    <string name="ifont_cellular" translatable="false">t</string>
+    <string name="ifont_wifi" translatable="false">u</string>
+    <string name="ifont_check" translatable="false">v</string>
+    <string name="ifont_close" translatable="false">w</string>
+    <string name="ifont_location" translatable="false">x</string>
+    <string name="ifont_movie" translatable="false">y</string>
+    <string name="ifont_package" translatable="false">z</string>
+    <string name="ifont_language" translatable="false">ß</string>
+    <string name="ifont_voip" translatable="false">à</string>
+    <string name="ifont_dns" translatable="false">á</string>
+    <string name="ifont_arrow_average" translatable="false">ä</string>
+    <string name="ifont_web_rendering" translatable="false">è</string>
+    <string name="ifont_http_proxy" translatable="false">é</string>
+    <string name="ifont_qos" translatable="false">ë</string>
+    <string name="ifont_udp" translatable="false">ì</string>
+    <string name="ifont_non_transparent" translatable="false">í</string>
+    <string name="ifont_network" translatable="false">ï</string>
+    <string name="ifont_adjustment" translatable="false">ò</string>
+    <string name="ifont_tcp" translatable="false">ó</string>
+    <string name="ifont_arrow_down" translatable="false">ö</string>
+    <string name="ifont_filter" translatable="false">ù</string>
+    <string name="ifont_traceroute" translatable="false">ú</string>
+    <string name="ifont_arrow_up" translatable="false">ü</string>
+    <string name="ifont_logo_inverse" translatable="false">A</string>
+    <string name="ifont_watch_inverse" translatable="false">B</string>
+    <string name="ifont_heart" translatable="false">C</string>
+    <string name="ifont_shopping" translatable="false">D</string>
+    <string name="ifont_audio" translatable="false">E</string>
+    <string name="ifont_menu" translatable="false">F</string>
+    <string name="ifont_gaming" translatable="false">G</string>
+    <string name="ifont_vr" translatable="false">H</string>
+    <string name="ifont_traffic_in" translatable="false">I</string>
+    <string name="ifont_traffic_out" translatable="false">J</string>
+    <string name="ifont_barrow" translatable="false">K</string>
+    <string name="ifont_feather" translatable="false">L</string>
+    <string name="ifont_owl" translatable="false">M</string>
+    <string name="ifont_trophy" translatable="false">N</string>
+    <string name="ifont_hourglass" translatable="false">O</string>
+    <string name="ifont_heatmap" translatable="false">P</string>
+    <string name="ifont_documents" translatable="false">Q</string>
+    <string name="ifont_compass" translatable="false">R</string>
+    <string name="ifont_armchair" translatable="false">S</string>
+    <string name="ifont_laptop" translatable="false">T</string>
+    <string name="ifont_outdoor" translatable="false">R</string>
+    <string name="ifont_indoor" translatable="false">S</string>
+    <string name="ifont_abbrevation_ilr" translatable="false">=</string>
+
+
+    <string name="menu_button_start_icon" translatable="false">@string/ifont_start</string>
+    <string name="menu_button_start_again_icon" translatable="false">@string/ifont_start</string>
+
+    <string name="customer_name">HAKOM</string>
+    <string name="app_name">Open-RMBT</string>
+    <string name="app_name_api" translatable="false">RMBT</string>
+    
+    <string name="test_notification_ticker">Open-RMBT running…</string>
+    <string name="test_notification_title">Open-RMBT</string>
+
+    <string name="menu_rtr_web_link"></string>
+    <string name="about_rtr_line1"></string>
+    
+    <string name="about_web_line1" translatable="false"></string>
+    <string name="about_web_link" translatable="false"></string>
+    
+    <string name="about_email_line1" translatable="false"></string>
+    <string name="about_email_email"></string>
+    <string name="about_email_subject">Support request Open-RMBT</string>
+    
+    <string name="terms_accept_text"></string>
+    <integer name="rmbt_terms_version" translatable="false">3</integer>
+
+    <string name="url_statistics"></string>
+    <string name="url_help"></string>
+    <string name="url_help_result"></string>
+    <string name="url_terms"></string>
+
+    <string name="header_image_description" translatable="false">Header image</string>
+</resources>

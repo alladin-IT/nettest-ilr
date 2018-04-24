@@ -1,0 +1,180 @@
+apply plugin: 'com.android.application'
+
+//def customerName = gradle.ext.customerName
+def customerName = 'irl'
+
+println "Building Android App for customer: " + customerName
+
+//load android.properties to project properties
+file("customers/" + customerName + "/android.properties").withReader { reader ->
+    def androidProperties = new Properties()
+    androidProperties.load(reader)
+    androidProperties.each { key, val ->
+        project.ext.set(key, val)
+    }
+}
+
+dependencies {
+    compile project(':RMBTClient')
+    compile(project(':nettest-shared')) {
+        exclude group: 'org.postgresql'
+    }
+    compile project(':RMBTUtil')
+
+    // Not supported in Eclipse now. Needs to install Google play Services from Android SDK Manager and use it as a library project.
+    compile 'com.google.android.gms:play-services:4.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile group: 'dnsjava', name: 'dnsjava', version: dnsjava_version
+    compile group: 'net.sf.jopt-simple', name: 'jopt-simple', version: jopt_simple_version
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile group: 'com.j256.ormlite', name: 'ormlite-core', version: '5.0'
+    compile group: 'com.j256.ormlite', name: 'ormlite-android', version: '5.0'
+}
+
+// copy NDT resources to android debug
+tasks.whenTaskAdded { task ->
+    if (task.name.startsWith("processDebugManifest")) {
+        task << {
+            copy {
+                from "../RMBTClient/src/assets/"
+                into buildDir.getPath() + "/intermediates/assets/debug/"
+                include "**.properties"
+            }
+        }
+
+    }
+}
+
+// copy NDT resources to android release
+tasks.whenTaskAdded { task ->
+    if (task.name.startsWith("processReleaseManifest")) {
+        task << {
+            copy {
+                from "../RMBTClient/src/assets/"
+                into buildDir.getPath() + "/intermediates/assets/release/"
+                include "**.properties"
+            }
+        }
+
+    }
+}
+
+android {
+    compileSdkVersion Integer.parseInt(android_compile_sdk_version)
+    buildToolsVersion android_build_tools_version
+
+    useLibrary  'org.apache.http.legacy'
+
+    sourceSets {
+        main {
+            java {
+                srcDirs = ['src']
+                exclude 'at/alladin/rmbt/client/applet/RMBTApplet.java'
+            }
+            manifest {
+                srcFile 'AndroidManifest.xml'
+            }
+            res {
+                srcDir 'res'
+            }
+            assets {
+                srcDir 'assets'
+            }
+        }
+        dev {
+            manifest {
+                srcFile 'customers/' + customerName + '/dev/AndroidManifest.xml'
+            }
+            res {
+                srcDir 'customers/' + customerName + '/dev/res'
+            }
+            assets {
+                srcDir 'customers/' + customerName + '/dev/assets'
+            }
+        }
+        prod {
+            manifest {
+                srcFile 'customers/' + customerName + '/prod/AndroidManifest.xml'
+            }
+            res {
+                srcDir 'customers/' + customerName + '/prod/res'
+            }
+            assets {
+                srcDir 'customers/' + customerName + '/prod/assets'
+            }
+        }
+    }
+
+    /*buildTypes.all { buildType ->
+        buildConfigField "String", "CLIENT_SECRET", project.hasProperty('RMBT_CLIENT_SECRET') ? String.format("\"%s\"", RMBT_CLIENT_SECRET) : "null"
+    }*/
+
+    productFlavors {
+        dev {
+            applicationId RMBT_ANDROID_DEV_PACKAGE_NAME
+            versionName = RMBT_ANDROID_DEV_VERSION_NAME
+            versionCode = Integer.parseInt(RMBT_ANDROID_DEV_VERSION_CODE)
+            manifestPlaceholders = [ maps_api_key: RMBT_GOOGLEMAPS_DEV_APIKEY ]
+            buildConfigField "double", "MAP_DEFAULT_CENTER_LAT", RMBT_GOOGLEMAPS_DEV_DEFAULT_CENTER_LAT
+            buildConfigField "double", "MAP_DEFAULT_CENTER_LONG", RMBT_GOOGLEMAPS_DEV_DEFAULT_CENTER_LONG
+            buildConfigField "double", "MAP_DEFAULT_ZOOM_FACTOR", RMBT_GOOGLEMAPS_DEV_DEFAULT_ZOOM_FACTOR
+            buildConfigField "boolean", "SHOW_CLASSIFICATION_FOR_SPEED_RESULTS", RMBT_RESULT_DEV_SHOW_CLASSIFICATION_FOR_SPEED_RESULTS
+            buildConfigField "boolean", "NERDMODE_SHOW_MCC_MNC", RMBT_NERDMODE_DEV_SHOW_MCC_MNC
+            buildConfigField "boolean", "TERMS_SHOW_TITLE", RMBT_TERMS_DEV_SHOW_TITLE
+            buildConfigField "boolean", "TERMS_ANONYMOUS_MODE_INFO", RMBT_TERMS_DEV_SHOW_ANONYMOUS_MODE_INFO
+            buildConfigField "boolean", "TERMS_SWITCH_TO_SETTINGS_AFTER_ACCEPT", RMBT_TERMS_DEV_SWITCH_TO_SETTINGS_AFTER_ACCEPT
+            buildConfigField "boolean", "HISTORY_ENABLE_FILTERS", RMBT_HISTORY_DEV_ENABLE_FILTERS
+            buildConfigField "boolean", "NERDMODE_CPU_CLASSIFICATION", RMBT_NERDMODE_DEV_CPU_CLASSIFICATION
+            buildConfigField "boolean", "TEST_SHOW_DATA_CONSUMPTION_WARNING", RMBT_TEST_DEV_SHOW_DATA_CONSUMPTION_WARNING
+            buildConfigField "boolean", "TEST_LEAVE_SPEED_GAUGE_FILLED_AFTER_TEST", RMBT_TEST_DEV_LEAVE_SPEED_GAUGE_FILLED_AFTER_TEST
+            buildConfigField "boolean", "TEST_SHOW_REDO_BUTTON", RMBT_TEST_DEV_SHOW_REDO_BUTTON
+            buildConfigField "boolean", "RESULT_SHOW_CLASSIFICATION_FOR_QOS_RESULTS", RMBT_RESULT_DEV_SHOW_CLASSIFICATION_FOR_QOS_RESULTS
+            buildConfigField "at.alladin.rmbt.android.main.AppConstants.QosResultCategory", "RESULT_QOS_CATEGORY", RMBT_RESULT_DEV_QOS_CATEGORY
+            buildConfigField "at.alladin.rmbt.android.main.AppConstants.ResultDetails", "RESULT_DETAILS_VIEW", RMBT_RESULT_DEV_DETAILS_VIEW
+            buildConfigField "at.alladin.rmbt.android.main.AppConstants.TestWorkflow", "WORKFLOW_TEST_WORKFLOW", RMBT_WORKFLOW_DEV_TEST_WORKFLOW
+        }
+        prod {
+            applicationId RMBT_ANDROID_PROD_PACKAGE_NAME
+            versionName = RMBT_ANDROID_PROD_VERSION_NAME
+            versionCode = Integer.parseInt(RMBT_ANDROID_PROD_VERSION_CODE)
+            manifestPlaceholders = [ maps_api_key: RMBT_GOOGLEMAPS_PROD_APIKEY ]
+            buildConfigField "double", "MAP_DEFAULT_CENTER_LAT", RMBT_GOOGLEMAPS_PROD_DEFAULT_CENTER_LAT
+            buildConfigField "double", "MAP_DEFAULT_CENTER_LONG", RMBT_GOOGLEMAPS_PROD_DEFAULT_CENTER_LONG
+            buildConfigField "double", "MAP_DEFAULT_ZOOM_FACTOR", RMBT_GOOGLEMAPS_PROD_DEFAULT_ZOOM_FACTOR
+            buildConfigField "boolean", "SHOW_CLASSIFICATION_FOR_SPEED_RESULTS", RMBT_RESULT_PROD_SHOW_CLASSIFICATION_FOR_SPEED_RESULTS
+            buildConfigField "boolean", "NERDMODE_SHOW_MCC_MNC", RMBT_NERDMODE_PROD_SHOW_MCC_MNC
+            buildConfigField "boolean", "TERMS_SHOW_TITLE", RMBT_TERMS_PROD_SHOW_TITLE
+            buildConfigField "boolean", "TERMS_ANONYMOUS_MODE_INFO", RMBT_TERMS_PROD_SHOW_ANONYMOUS_MODE_INFO
+            buildConfigField "boolean", "TERMS_SWITCH_TO_SETTINGS_AFTER_ACCEPT", RMBT_TERMS_PROD_SWITCH_TO_SETTINGS_AFTER_ACCEPT
+            buildConfigField "boolean", "HISTORY_ENABLE_FILTERS", RMBT_HISTORY_PROD_ENABLE_FILTERS
+            buildConfigField "boolean", "NERDMODE_CPU_CLASSIFICATION", RMBT_NERDMODE_PROD_CPU_CLASSIFICATION
+            buildConfigField "boolean", "TEST_SHOW_DATA_CONSUMPTION_WARNING", RMBT_TEST_PROD_SHOW_DATA_CONSUMPTION_WARNING
+            buildConfigField "boolean", "TEST_LEAVE_SPEED_GAUGE_FILLED_AFTER_TEST", RMBT_TEST_PROD_LEAVE_SPEED_GAUGE_FILLED_AFTER_TEST
+            buildConfigField "boolean", "TEST_SHOW_REDO_BUTTON", RMBT_TEST_PROD_SHOW_REDO_BUTTON
+            buildConfigField "boolean", "RESULT_SHOW_CLASSIFICATION_FOR_QOS_RESULTS", RMBT_RESULT_PROD_SHOW_CLASSIFICATION_FOR_QOS_RESULTS
+            buildConfigField "at.alladin.rmbt.android.main.AppConstants.QosResultCategory", "RESULT_QOS_CATEGORY", RMBT_RESULT_PROD_QOS_CATEGORY
+            buildConfigField "at.alladin.rmbt.android.main.AppConstants.ResultDetails", "RESULT_DETAILS_VIEW", RMBT_RESULT_PROD_DETAILS_VIEW
+            buildConfigField "at.alladin.rmbt.android.main.AppConstants.TestWorkflow", "WORKFLOW_TEST_WORKFLOW", RMBT_WORKFLOW_PROD_TEST_WORKFLOW
+        }
+    }
+
+    defaultConfig {
+        applicationId RMBT_ANDROID_DEV_PACKAGE_NAME
+        versionName = RMBT_ANDROID_DEV_VERSION_NAME
+        versionCode = Integer.parseInt(RMBT_ANDROID_DEV_VERSION_CODE)
+
+        minSdkVersion Integer.parseInt(android_min_sdk_version)
+        targetSdkVersion Integer.parseInt(android_target_sdk_version)
+    }
+
+    dexOptions {
+        jumboMode true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}

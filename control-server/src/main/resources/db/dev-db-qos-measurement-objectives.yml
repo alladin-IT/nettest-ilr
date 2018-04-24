@@ -1,0 +1,52 @@
+objectives: 
+  - objectiveId: 87
+    type: dns
+    measurementClass: 1
+    concurrencyGroup: 600
+    description: dns.testinfo
+    summary: test.desc.dns
+    params: 
+      host: www.google.at
+      record: A
+      timeout: 5000000000
+    results:
+      - operator: ge
+        on_failure: dns.failure
+        on_success: dns.success
+        dns_result_entries_found: 1
+      - operator: ne
+        on_failure: test.timeout.exceeded
+        dns_result_info: TIMEOUT
+        
+  - objectiveId: 38
+    type: tcp
+    measurementClass: 0
+    measurementServerUuid: 
+    concurrencyGroup: 200
+    description: tcp.out.testinfo
+    summary: test.desc.tcp.out
+    params: 
+      timeout: 3000000000
+      out_port: 25
+    results:
+      - operator: eq
+        on_failure: tcp.failure.request
+        on_success: tcp.success
+        tcp_result_out_response: PING
+        
+  - objectiveId: 84
+    type: non_transparent_proxy
+    measurementClass: 1
+    measurementServerUuid: 
+    concurrencyGroup: 300
+    description: ntp.testinfo
+    summary: test.desc.ntp
+    params: 
+      port: 80
+      request: "GET "
+      timeout: 5000000000
+    results:
+      - operator: eq
+        on_failure: ntp.failure
+        on_success: ntp.success
+        nontransproxy_result_response: "%PARAM nontransproxy_objective_request%"

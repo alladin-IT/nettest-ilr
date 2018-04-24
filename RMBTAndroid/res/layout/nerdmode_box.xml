@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/nerdmode_network_info_separator"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <View android:background="@color/calm_gauge_background"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <View android:background="@color/app_background"
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <View android:background="@color/calm_gauge_background"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/nerdmode_network_info_separator"
+        android:id="@+id/nerdmode_box_cpu_and_ip_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:showDividers="middle" >
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:id="@+id/title_page_stats_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_bg_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Alladin.Nerdmode.Title.Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:text="@string/title_screen_cpu" />
+
+                <TextView
+                    android:id="@+id/cpu_status"
+                    style="@style/Alladin.Nerdmode.Title.Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="100%" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Alladin.Nerdmode.Title.Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:text="@string/title_screen_ram" />
+
+                <TextView
+                    android:id="@+id/ram_status"
+                    style="@style/Alladin.Nerdmode.Title.Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+
+                    android:text="100%" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_page_ip_button"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_bg_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Alladin.Nerdmode.Title.Text"
+                    android:layout_weight=".6"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_screen_ipv4" />
+
+                <RelativeLayout
+                    android:paddingRight="15dp"
+                    android:layout_weight=".4"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" >
+
+                    <at.alladin.rmbt.android.views.AlladinTextView
+                        android:layout_centerVertical="true"
+                        android:textSize="18dp"
+                        android:id="@id/ipv4_text_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:visibility="gone"/>
+
+                    <!--
+                    <ImageView
+                        android:id="@id/ipv4_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/traffic_lights_grey"
+                        android:visibility="gone" />
+                        -->
+
+                    <ProgressBar
+                        android:id="@+id/ipv4_status_progress_bar"
+                        style="@android:style/Widget.ProgressBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:gravity="right"
+                    style="@style/Alladin.Nerdmode.Title.Text"
+                    android:layout_weight=".6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_screen_ipv6" />
+
+                <RelativeLayout
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    android:layout_weight=".4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" >
+
+                    <at.alladin.rmbt.android.views.AlladinTextView
+                        android:layout_centerVertical="true"
+                        android:textSize="18dp"
+                        android:id="@id/ipv6_text_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:visibility="gone"/>
+
+                    <!--
+                    <ImageView
+                        android:id="@id/ipv6_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/traffic_lights_grey"
+                        android:visibility="gone" />
+                        -->
+
+                    <ProgressBar
+                        android:id="@+id/ipv6_status_progress_bar"
+                        style="@android:style/Widget.ProgressBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/nerdmode_box_cpu_and_ip_view"
+        android:id="@+id/nerdmode_cpu_ip_separator"
+
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <View android:background="@color/calm_gauge_background"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <View android:background="@color/app_background"
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <View android:background="@color/calm_gauge_background"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <at.alladin.rmbt.android.views.nerdmode.BgTrafficViewImpl
+        android:layout_below="@id/nerdmode_cpu_ip_separator"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@id/nerdmode_bg_traffic_view"
+        android:background="@drawable/layout_bg_selector"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_below="@id/nerdmode_bg_traffic_view"
+        android:id="@+id/nerdmode_bg_traffic_separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <View android:background="@color/calm_gauge_background"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <View android:background="@color/app_background"
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <View android:background="@color/calm_gauge_background"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <at.alladin.rmbt.android.views.nerdmode.GeoLocationViewImpl
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/nerdmode_bg_traffic_separator"
+        android:id="@id/nerdmode_gps_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

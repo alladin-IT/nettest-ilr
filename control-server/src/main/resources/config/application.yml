@@ -1,0 +1,44 @@
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+#spring:
+#  messages:
+#    basename: classpath:/i18n/messages
+    #cache-seconds: ...
+
+# ===================================================================
+# Control server specific properties
+# ===================================================================
+
+controlServer:
+  #memcached:
+    #host: localhost
+    #port: 11211
+  rmbtClientName:
+    - RMBT
+    - RMBTjs
+    - Open-RMBT
+    - Open-RMBT
+    - Open-RMBT
+    - RMBTws
+    - NetTest
+    
+  rmbtVersionNumber:  
+    - 0.1 
+    - 0.3
+
+  #rmbtResultPath: result
+  
+  externalGeoIpService:
+    enabled: false
+    url: http://localhost/?ip={ip}
+
+  #qos result path
+  #rmbtQosResultPath: resultQoS
+  
+  defaultLocale: en
+
+  settingsKey: settings__nettest.example.com

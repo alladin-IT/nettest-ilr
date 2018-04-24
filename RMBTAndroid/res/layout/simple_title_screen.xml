@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 alladin-IT OG
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        layout="@layout/info_overlay" />
+
+    <at.alladin.rmbt.android.views.network.NetworkInfoViewImpl
+        android:id="@+id/infocollector_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_view_gauge_container"
+        android:layout_marginTop="-130dp" />
+
+    <include
+        android:id="@id/nerdmode_view"
+        android:layout_below="@id/infocollector_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/nerdmode_box" />
+
+    <FrameLayout
+        android:id="@+id/test_view_speed_info_container"
+        android:layout_margin="15dp"
+        android:layout_below="@id/infocollector_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:id="@id/title_page_speed_test_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="at.alladin.rmbt.android.main.SimpleTestResultFragment"
+            app:screen_type="OTHER" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_below="@id/test_view_speed_info_container"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:id="@id/title_page_switch_to_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="at.alladin.rmbt.android.fragments.nested.SwitchToResultsFragment"
+            />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/title_screen_logo"
+        android:id="@+id/customer_logo" />
+
+    <LinearLayout
+        android:id="@+id/test_view_gauge_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/customer_logo"
+        android:layout_centerHorizontal="true">
+        <FrameLayout
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <at.alladin.rmbt.android.views.CanvasArcDoubleGaugeWithLabelsView
+                android:id="@+id/test_view_gauge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:id="@+id/title_page_start_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/start_button_selector" >
+
+                <at.alladin.rmbt.android.views.AlladinTextView
+                    android:id="@+id/title_page_start_button_text"
+                    style="@style/Alladin.StartScreen.StartButton.Active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/menu_button_start_icon" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

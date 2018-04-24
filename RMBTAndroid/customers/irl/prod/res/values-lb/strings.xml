@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013-2015 alladin-IT GmbH
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+	<string name="splash_screen_title">ANT</string>
+
+	<string name="error_no_internet">Keng Internetverbindung</string>
+	<string name="error_no_data">Keng Daten disponibel</string>
+	<string name="error_history_no_data_no_connection">Keng Internetverbindung. Daten konnte net geluede ginn.</string>
+
+	<string name="main_dialog_registration_title">Umeldung...</string>
+	<string name="main_dialog_registration_text">De Client gëtt ugemelt, w.e.g. waarden...</string>
+
+	<string name="main_dialog_reload_title">Nei lueden...</string>
+	<string name="main_dialog_reload_text">D\'Date ginn nei gelueden, w.e.g. waarden...</string>
+
+	<string name="preferences">Astellungen</string>
+
+	<string name="preferences_contract_dl_mbits">Download Mbit/s</string>
+	<string name="preferences_contract_dl_mbits_sum">Download Mbit/s aus ärem Kontrakt</string>
+
+	<string name="preferences_contract_ul_mbits">Upload Mbit/s</string>
+	<string name="preferences_contract_ul_mbits_sum">Upload Mbit/s aus ärem Kontrakt</string>
+
+	<string name="preferences_contract_name">Numm vun Ärem Kontrakt</string>
+	<string name="preferences_contract_name_sum">Numm vun Ärem Kontrakt</string>
+
+	<string name="preferences_play_jingle">Toun</string>
+	<string name="preferences_play_jingle_sum">Spillt en Toun beim Start an Enn vum Test</string>
+
+	<string name="preferences_category_test">Präferenzen</string>
+	<string name="preferences_category_contract_info">Donnéeën vun Ärem Kontrakt</string>
+
+	<string name="preferences_category_nerd_mode">Expert Modus</string>
+	<string name="preferences_nerd_mode">Expert Modus</string>
+	<string name="preferences_nerd_mode_sum">Méi Informatiounen uweisen</string>
+
+	<string name="preferences_enable_qos">QoS Miessungen</string>
+	<string name="preferences_enable_qos_sum">QoS Miessungen erlaben</string>
+
+	<string name="preferences_location_settings">Positioun</string>
+	<string name="preferences_location_settings_sum">Positiounsastellungen änneren</string>
+
+	<string name="preferences_language_settings">Sprooch</string>
+	<string name="preferences_language_settings_sum">Sproocheastellungen</string>
+
+	<string name="preferences_no_gps">keen GPS</string>
+	<string name="preferences_no_gps_sum">Benotzt w.e.g. de GPS net während dem Test</string>
+
+	<string name="preferences_tag">Kennzeechen</string>
+	<string name="preferences_tag_sum">Fügt zu all Miessung een individuellt Kennzeechen bai </string>
+
+	<string name="preferences_loop_mode">Schleef</string>
+	<string name="preferences_loop_mode_sum">D\'Miessungen an enger Schleef lafe loossen.</string>
+
+	<string name="preferences_loop_mode_max_tests">Maximal Unzuel vun Tester an der Schleef</string>
+	<string name="preferences_loop_mode_max_tests_sum">Maximal Unzuel vun Tester wann den Schleefemodus aktivéiert ass (0 = leeft onendlech)</string>
+
+	<string name="preferences_loop_mode_min_delay">Schleef minimal verzögeren</string>
+	<string name="preferences_loop_mode_min_delay_sum">Minimal Zäit tëschent zwou Miessungen wann de Schleefemodus aktivéiert ass.</string>
+
+	<string name="preferences_loop_mode_max_delay">Schleef maximal verzögeren</string>
+	<string name="preferences_loop_mode_max_delay_sum">Maximal Zäit an Sekonnen tëschent zwou Miessungen wann de Schleefemodus aktivéiert ass.</string>
+
+	<string name="preferences_loop_mode_movement">Beweegung am Schleefemodus</string>
+	<string name="preferences_loop_mode_movement_sum">Beweegung a Meter fir déi nächst Miessung am Schleefemodus ze starten</string>
+
+	<string name="preferences_loop_mode_gps">Benotzt de GPS wann de Schleefemodus aktivéiert ass</string>
+	<string name="preferences_loop_mode_gps_sum">Benotzt de GPS tëschent zwou Miessungen am Schleefemodus</string>
+
+	<string name="preferences_ndt">NDT</string>
+	<string name="preferences_ndt_sum">Aktivéiert weider Miessungen</string>
+
+	<string name="preferences_ic">Publizéiert perséinlech Donnéeën</string>
+
+	<string name="preferences_ipv4_only">Nëmmen IPv4</string>
+	<string name="preferences_ipv4_only_sum">Benotzt nie IPv6</string>
+
+	<string name="preferences_anonym_mode">Anonyme Modus</string>
+	<string name="preferences_anonym_mode_sum">Läscht d\'Relatioun tëschent Ärer Client-UUID an Ären Miessungen</string>
+
+	<string name="preferences_category_developer">Entwécklung</string>
+	<string name="preferences_category_loop_mode">Schleefemodus</string>
+	<string name="preferences_category_developer_control_server">Stéierungsserver</string>
+	<string name="preferences_category_developer_map_server">Kaarteserver</string>
+	<string name="preferences_category_developer_qos_server">QoS Server</string>
+	<string name="preferences_category_developer_debug">Feeler-Behiewung</string>
+
+	<string name="preferences_dev_control_override">Individuellen Stéierungsserver</string>
+	<string name="preferences_dev_control_override_sum">Aktivéiert personaliséiert Astellungen fir den Stéierungsserver</string>
+
+	<string name="preferences_dev_control_host">Den Hostserver stéieren</string>
+	<string name="preferences_dev_control_host_sum">d\'URL vum Stéierungsserver iwwerschréiwen</string>
+
+	<string name="preferences_dev_control_port">Stéierungsport</string>
+	<string name="preferences_dev_control_port_sum">Den Post vum Stéierungsserver iwwerschréiwen</string>
+
+	<string name="preferences_dev_control_ssl">Stéierungsserver SSL</string>
+	<string name="preferences_dev_control_ssl_sum">Benotzt eng verschlesselt Verbindung zum Stéierungsserver</string>
+
+	<string name="preferences_dev_map_override">De Kaarteserver iwwerschreiwen</string>
+	<string name="preferences_dev_map_override_sum">Aktivéiert personaliséiert Astellungen fir den Kaarteserver</string>
+
+	<string name="preferences_dev_map_host">Host vum Kaarteserver </string>
+	<string name="preferences_dev_map_host_sum">D\'URL vum Kaarteserver iwwerschreiwen</string>
+
+	<string name="preferences_dev_map_port">Port vum Kaarteserver </string>
+	<string name="preferences_dev_map_port_sum">De Port vum Kaarteserver iwwerschreiwen</string>
+
+	<string name="preferences_dev_map_ssl">Kaarteserver SSL</string>
+	<string name="preferences_dev_map_ssl_sum">Benotzt eng verschlësselt Verbindung zum Kaarteserver</string>
+
+	<string name="preferences_dev_qos_ssl" >QoS Server SSL</string>
+	<string name="preferences_dev_qos_ssl_sum" >Benotzt eng verschlësselt Verbindung zum QoS-Server</string>
+
+	<string name="preferences_dev_debug_sysout" >Späichert de Feelermessage an enger Datei</string>
+	<string name="preferences_dev_debug_sysout_sum" >Späichert de Feelermessage an enger Textdatei am \"qosdebug\" Fichier</string>
+
+	<string name="menu_button_start">Start</string>
+	<string name="menu_button_start_again">nach eng Kéier starten</string>
+	<string name="menu_button_start_again_details">nach eng Kéier starten</string>
+	<string name="menu_button_title_page">Ufank</string>
+	<string name="menu_button_map">Kaart</string>
+	<string name="menu_button_history">Historique</string>
+	<string name="menu_button_help">Hëllef</string>
+	<string name="menu_button_statistics">Statistiken</string>
+	<string name="menu_button_settings">Astellungen</string>
+	<string name="menu_button_about">Info</string>
+	<string name="menu_button_log">Loggen</string>
+	<string name="menu_button_share">Deelen</string>
+	<string name="menu_button_netstat">Netstat</string>
+
+	<string name="news_title">News</string>
+	<string name="news_no_message">Kee neien Message</string>
+
+	<string name="about_version_title">Versioun</string>
+	<string name="about_clientid_title">Client-UUID</string>
+	<string name="about_clientid_toast">D\'Client-UUID gouf an d\'Tëschenoflagerung kopéiert.</string>
+	<string name="about_web_title">Internet</string>
+	<string name="about_email_title">E-mail</string>
+	<string name="about_email_sending">D\'E-mail gëtt verschéckt...</string>
+	<string name="about_terms_title">Dateschutzrichtlinnen</string>
+	<string name="about_terms_line1">Dateschutzrichtlinnen an Benotzungsbedéngungen</string>
+	<string name="about_dev_title">Entwécklung</string>
+	<string name="about_gms_legal_title">Google Play</string>
+	<string name="about_gms_legal_line1">Google Play Services Legal Notice</string>
+	<string name="about_test_counter_title">Testzieler</string>
+
+	<!-- TERMS -->
+
+	<string name="terms">Dateschutzrichtlinnen an Benotzungsbedéngungen</string>
+
+	<string name="terms_accept_button">Ech stëmmen zou</string>
+	<string name="terms_accept_button_continue">Weiderfueren</string>
+	<string name="terms_decline_button">Ofleenen</string>
+
+	<string name="terms_switch_to_settings">Direkt bei d\'Astellungen</string>
+
+	<string name="terms_ic_header">Perséinlech Donnéeën publizéieren</string>
+	<string name="terms_ic_accept_text"><b>Perséinlech Donnéeën publizéieren.</b></string>
+
+	<string name="terms_ndt_header">optionalen, méi verdéiwenden NDT-Test</string>
+	<string name="terms_ndt_accept_text"><b>Ech wëll gären den optionalen NDT-Test maachen.</b></string>
+	<string name="terms_ndt_back_button">Zréck</string>
+	<string name="terms_ndt_accept_button">Weiderfueren</string>
+
+	<string name="loop_notification_ticker">Schleefemodus ass aktiv...</string>
+	<string name="loop_notification_title">Schleefemodus aktiv</string>
+	<string name="loop_notification_text">Klickt fir de Schleefemodus ze stoppen</string>
+
+	<string name="loop_started">Den Schleefemodus ass gestart.</string>
+	<string name="loop_already_active">De Schleefemodus ass schonn aktiv.</string>
+
+	<string name="test_mbps">Mbit/s</string>
+	<string name="test_ms">ms</string>
+	<string name="test_dbm">dBm</string>
+	<string name="test_location_km_h">km/h</string>
+	<string name="test_location_m">m</string>
+	<string name="test_location_sat">Satelliten</string>
+	<string name="test_location_gps">GPS</string>
+	<string name="test_location_network">Netzwierk</string>
+	<string name="test_location_dir_n">N</string>
+	<string name="test_location_dir_e">E</string>
+	<string name="test_location_dir_s">S</string>
+	<string name="test_location_dir_w">W</string>
+
+	<string name="test_notification_text">D\'Miessung leeft nach am Hannergrond.</string>
+	<string name="test_dialog_error_title">Feeler...</string>
+	<string name="test_dialog_error_text">Feeler während der Miessung.</string>
+	<string name="test_dialog_error_control_server_conn">D\'Verbindung zum Miessserver konnt net hiergestallt ginn.</string>
+	<string name="test_toast_error_text_qos">Feeler während der QoS Miessung.</string>
+
+	<string name="test_dialog_abort_title">Ofbriechen...</string>
+	<string name="test_dialog_abort_text">Wëll dir wierklech den Test ofbriechen?</string>
+	<string name="test_dialog_abort_yes">Miessung ofbriechen</string>
+	<string name="test_dialog_abort_no">Mat der Miessung weiderfueren</string>
+
+	<string name="history_button_sync">Sync</string>
+	<string name="history_button_filter">Filter</string>
+	<string name="history_device">Gerät</string>
+	<string name="history_type">Zougang</string>
+	<string name="history_date">Datum</string>
+	<string name="history_down">Down\nMbit/s</string>
+	<string name="history_up">Up\nMbit/s</string>
+	<string name="history_ping">Ping\nms</string>
+
+	<string name="history_filter">Filter</string>
+	<string name="history_filter_networks">Netzwierktyp</string>
+	<string name="history_filter_devices">Gerät</string>
+	<string name="history_filter_result_number">Unzuel vun Resultater</string>
+	<string name="history_filter_result_number_25">Nëmmen déi 25 neist Resultater uweisen</string>
+
+	<string name="history_context_menu_delete">Dës Miessung läschen?</string>
+	<string name="history_delete_item_progress_info">D\'Ufro gëtt vum Server verschafft.
+W.e.g. waarden...</string>
+	<string name="history_delete_item_progress_title">Trennen</string>
+	<string name="history_delete_item_failed">Et ass ee Feeler während der Ufro opgetrueden. D\'Miessung konnt net anonymiséiert ginn. Probéiert et w.e.g. nach eng Kéier.</string>
+
+	<string name="result_measurement">Miessung</string>
+	<string name="result_net">Netzwierk</string>
+
+	<string name="result_details">Detailer</string>
+
+	<string name="result_category_tests">Tester</string>
+	<string name="result_description">Beschreiwung</string>
+
+	<string name="sync_info_text">Fir den Historique vun zwee Geräter zesummenzefügen, frot w.e.g. een sync code ob engem Gerät un, an gitt en an deem aneren Gerät an.</string>
+	<string name="sync_request_code_button">De Code ufroen</string>
+	<string name="sync_enter_code_button">Gitt de Code an:</string>
+
+	<string name="sync_enter_code_header">De Code aginn</string>
+	<string name="sync_enter_code_msg">Code</string>
+	<string name="sync_enter_code_desc">Gitt w.e.g. den Sync-Code op dem aneren Gerät an.</string>
+	<string name="sync_enter_code_length">De Code muss 12 Stellen laang sinn</string>
+
+	<string name="sync_request_code_header">Ären Synchronisatiounscode ass:</string>
+	<string name="sync_request_code_msg">Code ufroen...</string>
+	<string name="sync_request_code_desc">Gitt w.e.g. den ugewissenen Sync-Code op dem aneren Gerät an.</string>
+	<string name="sync_request_code_context_copy">De Code kopéieren</string>
+
+	<!-- Map -->
+	<string name="map_filter_header">Kaartefilter</string>
+	<string name="map_choose_header">Kaart auswielen</string>
+
+	<string name="map_appearance_header">Kaartenduerstellung</string>
+	<string name="map_appearance_nosat_title">Standardusiicht</string>
+	<string name="map_appearance_nosat_summary">Kaart weist Standardusiicht</string>
+	<string name="map_appearance_sat_title">Satellitenusiicht</string>
+	<string name="map_appearance_sat_summary">Kaart weisst Satellitenusiicht</string>
+
+	<string name="map_overlay_header">Kaarteniveau</string>
+	<string name="map_overlay_auto_title">Automatesch</string>
+	<string name="map_overlay_auto_summary">D\'Kaart wiesselt automatesch tëschent der Heatmap an de Punkten</string>
+	<string name="map_overlay_heatmap_title">Heatmap</string>
+	<string name="map_overlay_heatmap_summary">D\'Kaart weist d\'Resultater als Heatmap</string>
+	<string name="map_overlay_points_title">Punkten</string>
+	<string name="map_overlay_points_summary">D\'Kaart weist d\'Resultater als Punkten</string>
+	<string name="map_overlay_shapes_title">Kaarteberäich</string>
+	<string name="map_overlay_shapes_summary">D\'Kaart weist d\'Resultater als Beräicher</string>
+	<string name="map_overlay_regions_title">Regiounen</string>
+	<string name="map_overlay_regions_summary"></string>
+	<string name="map_overlay_municipality_title">Gemeng</string>
+	<string name="map_overlay_municipality_summary"></string>
+	<string name="map_overlay_settlements_title">Dierfer</string>
+	<string name="map_overlay_settlements_summary"></string>
+	<string name="map_overlay_whitespots_title">Wäiss Flecken</string>
+	<string name="map_overlay_whitespots_summary"></string>
+
+	<string name="map_balloon_overlay_header">Miessungen</string>
+
+	<!-- Test -->
+	<string name="test_progress_title">Verbannen...</string>
+	<string name="test_progress_text">D\'Verbindung zum Miessserver gëtt hiergestallt. W.e.g. waarden...</string>
+	<string name="test_progress_text_wait">Den Testserver ass momentan ausgelaascht. D\'Miessung start an {0,choice,0#shortly|1#in 1 second|1&lt;in {0} seconds}. W.e.g. waarden...</string>
+	<string name="test_bottom_test">Status: {0}\nServer: {1}\nIP: {2}\n{3}\n{4}</string>
+	<string name="test_bottom_test_status_init">Initialiséieren</string>
+	<string name="test_bottom_test_status_ping">Ping</string>
+	<string name="test_bottom_test_status_down">Download</string>
+	<string name="test_bottom_test_status_init_up">Upload initialiséieren </string>
+	<string name="test_bottom_test_status_up">Upload</string>
+	<string name="test_bottom_test_status_end">Finaliséieren</string>
+	<string name="test_bottom_test_status_error">Feeler</string>
+	<string name="test_bottom_test_status_aborted">Ofgebrach</string>
+	<string name="test_bottom_test_status_ip">IP:</string>
+	<string name="test_bottom_test_status_server">Server:</string>
+
+
+	<!-- QoS values: -->
+
+	<string name="about_control_server_version">Versioun vum Control-Server </string>
+
+	<string name="preferences_dont_show_menu_on_exit">Kee Menu beim zoumaachen</string>
+	<string name="preferences_dont_show_menu_on_exit_sum">Net den Applikatiounsmen wéisen éiert d\'App zougemach gëtt</string>
+
+	<string name="term_signal">Signal</string>
+
+	<string name="result_page_title_qos">QoS</string>
+	<string name="result_page_title_test">Detailer</string>
+	<string name="result_page_title_menu">Resultat</string>
+	<string name="result_page_title_graph">Graphik</string>
+	<string name="result_page_title_map">Standuert</string>
+
+	<string name="qos_test_name_website">Referenzwebsäit</string>
+	<string name="qos_test_name_http_proxy">Net modifizéiert Daten</string>
+	<string name="qos_test_name_non_transparent_proxy">Transparent Verbindung</string>
+	<string name="qos_test_name_dns">DNS</string>
+	<string name="qos_test_name_tcp">TCP Porten</string>
+	<string name="qos_test_name_udp">UDP Porten</string>
+	<string name="qos_test_name_voip">VoIP</string>
+	<string name="qos_test_name_traceroute">Traceroute</string>
+
+	<string name="qos_test_result_error">Feeler</string>
+	<string name="qos_test_result_all">Resultater</string>
+
+	<string name="result_graph_download_and_speed">Download (Mbit/s)</string>
+	<string name="result_graph_upload_and_speed">Down (Mbit/s)</string>
+
+	<string name="result_details_qos_failure">Feelgeschloen</string>
+	<string name="result_details_qos_success">Erfollegräich</string>
+	<string name="result_details_qos_info">Weider Resultater</string>
+
+	<string name="page_title_title_page">Menü</string>
+	<string name="page_title_history">Historique</string>
+	<string name="page_title_help">Hëllef</string>
+	<string name="page_title_statistics">Statistiken</string>
+	<string name="page_title_information">Informatioun</string>
+	<string name="page_title_map">Kaart</string>
+	<string name="page_title_settings">Astellungen</string>
+	<string name="page_title_about">Informatioun</string>
+	<string name="page_title_main_result">Resultat</string>
+	<string name="page_title_sync">Sync</string>
+	<string name="page_title_qos_result">QoS Resultat</string>
+	<string name="page_title_information_commissioner">Dateschutzbeoptragten</string>
+
+	<string name="result_qos_stats">QoS Tester</string>
+	<string name="result_qos_error_no_data_available">Den QoS Test gouf net ausgefouert.</string>
+
+	<string name="title_screen_cpu">CPU</string>
+	<string name="title_screen_ram">RAM</string>
+	<string name="title_screen_ip">IP</string>
+	<string name="title_screen_ipv4">IPv4</string>
+	<string name="title_screen_ipv6">IPv6</string>
+	<string name="title_screen_cpu_mem_info">CPU &amp; Memoire Benotzung</string>
+	<string name="title_screen_traffic_info">Trafic</string>
+	<string name="title_screen_traffic_in">Ukommenden Trafic </string>
+	<string name="title_screen_traffic_out">Rausgoenden Trafic</string>
+	<string name="title_screen_location_info">Standuert</string>
+	<string name="title_screen_traffic">Hannergrond Trafic</string>
+	<string name="title_screen_network_id">Netzwierk ID:</string>
+
+	<string name="title_screen_whereareyou">Wou sidd dir?</string>
+	<string name="title_screen_test_timer">Iwwersprangen oder {0,number,##}s waarden</string>
+
+	<string name="title_screen_info_overlay_location">Standuert</string>
+	<string name="title_screen_info_overlay_ipv4_public">Ëffentlech IPv4</string>
+	<string name="title_screen_info_overlay_ipv4_private">Privat IPv4</string>
+	<string name="title_screen_info_overlay_ipv6_public">Ëffentlech IPv6</string>
+	<string name="title_screen_info_overlay_ipv6_private">Privat IPv6</string>
+	<string name="title_screen_info_overlay_ul_traffic">Upload Trafic</string>
+	<string name="title_screen_info_overlay_dl_traffic">Download Trafic</string>
+	<string name="title_screen_info_overlay_control_server_conn">Stéierungsserververbindung</string>
+	<string name="title_screen_info_overlay_captive_portal_status">Captive Portal</string>
+	<string name="title_screen_info_overlay_is_loopback">Ass an enger Schleef</string>
+	<string name="title_screen_info_overlay_is_link_local">Lokale Link</string>
+	<string name="title_screen_info_overlay_location_position">Positioun</string>
+	<string name="title_screen_info_overlay_location_source">Quell</string>
+	<string name="title_screen_info_overlay_location_accuracy">Genauegkeet</string>
+	<string name="title_screen_info_overlay_location_altitude">Héicht</string>
+	<string name="title_screen_info_overlay_location_age">Alter</string>
+	<string name="title_screen_info_overlay_cpu_usage">Auslaaschtung vum CPU</string>
+	<string name="title_screen_info_overlay_cpu_cores">Kären CPU</string>
+	<string name="title_screen_info_overlay_mem_usage">Auslaaschtung vun der Mémoire</string>
+	<string name="title_screen_info_overlay_mem_total">Total Memoire</string>
+	<string name="title_screen_info_overlay_mem_free">Frai Memoire</string>
+	<string name="captive_portal_found">fonnt</string>
+	<string name="captive_portal_not_found">net fonnt</string>
+	<string name="captive_portal_testing">Miessung amgaangen</string>
+
+	<string name="not_available">net disponibel</string>
+
+	<string name="test_label_test_info">Testinformatiounen</string>
+	<string name="test_label_progress">Progrès</string>
+	<string name="test_label_quality_test">Netzwierk Tester</string>
+
+	<string name="netstat_local_address">Lokal Adress</string>
+	<string name="netstat_remote_address">Remote Adress</string>
+
+	<string name="start_data_consumption_warning">OPGEPASST! D\'Benotzung vum {0} brauch Datevolumen. Wat den Internet-Uschloss méi séier ass, wat méi Datevolumen gebraucht gëtt.. {1} ass net responsabel fir eng exzessiven Dateverbrauch. Beim Start vum {0} bestätegt de Benotzer ausdrécklech seng Eegenverantwortung an ass sech dem potentiellen Dateverbrauch bewosst.</string>
+
+	<string name="show_detailed_results">Méi Detailer</string>
+
+	<string name="test_gauge_label_init">init</string>
+	<string name="test_gauge_label_ping">ping</string>
+	<string name="test_gauge_label_down">down</string>
+	<string name="test_gauge_label_up">up</string>
+	<string name="test_gauge_label_qos">QoS</string>
+
+	</resources>

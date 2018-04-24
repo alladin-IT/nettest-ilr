@@ -1,0 +1,23 @@
+apply from: '../old_jar_project.gradle'
+apply from: '../java7.gradle'
+apply plugin: 'eclipse-wtp'
+
+sourceSets {
+    test {
+		java { srcDir 'test/java' }
+		resources { srcDir 'test/resources' }
+    }
+}
+
+dependencies {
+    compile project(':RMBTUtil')  
+
+    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: javax_servlet_version
+
+    compile group: 'dnsjava', name: 'dnsjava', version: dnsjava_version
+    compile group: 'com.google.guava', name: 'guava', version: guava_version
+    compile group: 'com.google.code.gson', name: 'gson', version: gson_version
+    compile group: 'org.postgresql', name: 'postgresql', version: postgresql_version
+    compile group: 'net.spy', name: 'spymemcached', version: spymemcached_version
+    testCompile group: 'junit', name: 'junit', version: junit_version
+}

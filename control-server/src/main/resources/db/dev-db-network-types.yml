@@ -1,0 +1,166 @@
+# ===================================================================
+# Network Types
+# ===================================================================
+
+networkTypes:
+  - networkTypeId: 98
+    name: LAN
+    groupName: LAN
+    aggregate: null
+    type: LAN
+    technologyOrder: 0
+  
+  - networkTypeId: 99
+    name: WLAN
+    groupName: WLAN
+    aggregate: null
+    type: WLAN
+    technologyOrder: 0
+  
+  - networkTypeId: 101
+    name: 2G/3G
+    groupName: 2G/3G
+    aggregate: [2G,3G]
+    type: MOBILE
+    technologyOrder: 0
+  
+  - networkTypeId: 102
+    name: 3G/4G
+    groupName: 3G/4G
+    aggregate: [3G,4G]
+    type: MOBILE
+    technologyOrder: 0
+  
+  - networkTypeId: 103
+    name: 2G/4G
+    groupName: 2G/4G
+    aggregate: [2G,4G]
+    type: MOBILE
+    technologyOrder: 0
+  
+  - networkTypeId: 104
+    name: 2G/3G/4G
+    groupName: 2G/3G/4G
+    aggregate: [2G,3G,4G]
+    type: MOBILE
+    technologyOrder: 0
+  
+  - networkTypeId: 97
+    name: CLI
+    groupName: CLI
+    aggregate: null
+    type: CLI
+    technologyOrder: 0
+  
+  - networkTypeId: 105
+    name: CELLULAR_ANY
+    groupName: MOBILE
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 0
+  
+  - networkTypeId: 1
+    name: GSM
+    groupName: 2G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 20000
+  
+  - networkTypeId: 2
+    name: EDGE
+    groupName: 2G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 21000
+  
+  - networkTypeId: 3
+    name: UMTS
+    groupName: 3G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 30000
+  
+  - networkTypeId: 4
+    name: CDMA
+    groupName: 2G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 2000
+  
+  - networkTypeId: 5
+    name: EVDO_0
+    groupName: 2G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 3000
+  
+  - networkTypeId: 6
+    name: EVDO_A
+    groupName: 2G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 4000
+  
+  - networkTypeId: 7
+    name: 1xRTT
+    groupName: 2G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 5000
+  
+  - networkTypeId: 8
+    name: HSDPA
+    groupName: 3G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 31000
+  
+  - networkTypeId: 9
+    name: HSUPA
+    groupName: 3G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 32000
+  
+  - networkTypeId: 10
+    name: HSPA
+    groupName: 3G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 33000
+  
+  - networkTypeId: 11
+    name: IDEN
+    groupName: 2G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 1000
+  
+  - networkTypeId: 12
+    name: EVDO_B
+    groupName: 2G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 6000
+  
+  - networkTypeId: 13
+    name: LTE
+    groupName: 4G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 40000
+  
+  - networkTypeId: 14
+    name: EHRPD
+    groupName: 2G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 7000
+  
+  - networkTypeId: 15
+    name: HSPA+
+    groupName: 3G
+    aggregate: null
+    type: MOBILE
+    technologyOrder: 34000
+    

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:id="@+id/network_info_container"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/info_network_name"
+            style="@style/Alladin.Nerdmode.Network.Title.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:paddingRight="5dp"
+            android:maxLines="1"
+            android:text="@string/title_screen_empty" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/network_info_container"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/info_network_type"
+            style="@style/Alladin.Nerdmode.Title.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="5dp"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/title_screen_empty" />
+
+        <TextView
+            android:id="@+id/info_signal_strength"
+            style="@style/Alladin.Nerdmode.Title.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:paddingLeft="5dp"
+            android:maxLines="1"
+            android:text="@string/title_screen_empty" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/network_info_container"
+        android:src="@drawable/symbol_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

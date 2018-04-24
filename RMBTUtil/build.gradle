@@ -1,0 +1,7 @@
+apply from: '../old_jar_project.gradle'
+apply from: '../java7.gradle'
+apply plugin: 'eclipse-wtp'
+
+dependencies {
+    compile group: 'org.json', name: 'json', version: org_json_version
+}

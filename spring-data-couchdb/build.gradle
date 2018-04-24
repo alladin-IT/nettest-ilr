@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+
+apply from: '../java8.gradle'
+
+dependencies {
+	compile group: 'javax.inject', name: 'javax.inject', version: javax_inject_version
+
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: spring_boot_version
+
+	// Spring Data
+	compile group: 'org.springframework.data', name: 'spring-data-commons', version: spring_data_commons_version
+
+	// httpclient
+	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: httpclient_version
+
+	compile group: 'com.google.code.gson', name: 'gson', version: gson_version
+
+	// Lightcouch
+	//compile group: 'org.lightcouch', name: 'lightcouch', version: '0.1.8'
+
+	// Community Spring Data project for CouchDB
+    //compile group: 'com.github.rwitzel', name: 'couchrepository-core', version: '0.9.1'
+    compile group: 'com.thoughtworks.paranamer', name: 'paranamer', version:'2.7'
+}

@@ -1,0 +1,64 @@
+# ===================================================================
+# Providers
+# ===================================================================
+
+providers:
+  - name: MEGAPATH2-US - MegaPath Networks Inc., US
+    shortname: MEGAPATH2-US
+    mapFilterEnabled: true
+    asnMappings:
+    - asn: 4565
+    
+  - name: UPC AT
+    shortname: UPC
+    #mccMnc: 
+    mapFilterEnabled: false
+    asnMappings:
+    - asn: 123
+      reverseDnsSuffix: .at
+    - asn: 124
+
+  - name: Hutchison Drei Austria GmbH
+    shortname: Hutchison Drei
+    mccMnc: 232-05
+    mapFilterEnabled: true
+    asnMappings:
+    - asn: 123
+    mccMncMappings:
+    - mccMncSim: { mcc: 232, mnc: 05 }
+      country: at
+
+  - name: Telenor d.o.o.
+    shortname: Telenor
+    mccMnc: 220-01
+    mapFilterEnabled: true
+    asnMappings:
+    - asn: 123
+      reverseDnsSuffix: .ac.at
+    mccMncMappings:
+    - mccMncSim: { mcc: 200, mnc: 01 }
+      validFrom: 2016-05-12T18:02:28.000Z
+      mccMncNetwork: { mcc: 200, mnc: 99 }
+      country: no
+    - mccMncSim: { mcc: 200, mnc: 33 }
+      country: no
+    
+   
+  - name: Telekom Srbija a.d.
+    shortname: mt:s
+    mccMnc: 220-03
+    mapFilterEnabled: true
+    asnMappings:
+    - asn: 123
+    mccMncMappings:
+    - mccMncSim: { mcc: 200, mnc: 01 }
+      country: sr
+
+  - name: Vip mobile d.o.o.
+    shortname: VIP
+    mccMnc: 220-05
+    mapFilterEnabled: true
+    mccMncMappings:
+    - mccMncSim: { mcc: 220, mnc: 05 }
+      country: sr
+      

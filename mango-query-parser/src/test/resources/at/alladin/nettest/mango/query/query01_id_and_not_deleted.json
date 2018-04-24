@@ -1,0 +1,11 @@
+{
+	"selector": {
+		"_id": "05d61bee80a74208a1fa6a46f17ac12f",
+		"$and": [
+			{"deleted": false},
+			{"deleted": {"$ne": true}},
+			{"deleted": {"$in": [false]}},
+			{"deleted": {"$nin": [true]}}
+		]
+	}
+}

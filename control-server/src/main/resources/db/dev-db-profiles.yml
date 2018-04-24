@@ -1,0 +1,17 @@
+# ===================================================================
+# Profiles
+# ===================================================================
+
+profiles:
+  - name: ANDROID
+    active: false
+    selector:
+      platform:
+        "$eq": Android
+    
+  - name: IOS
+    active: false
+    selector:
+      platform:
+        "$eq": iOS
+      

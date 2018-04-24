@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2015 SPECURE GmbH
+   
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+   
+      http://www.apache.org/licenses/LICENSE-2.0
+   
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+ -->
+
+<resources >
+	<color name="app_background">#ffffff</color>
+	<color name="action_bar_background">@color/app_background</color>
+
+	<color name="calm_gauge_background">#eeeeee</color>
+	<color name="calm_gauge_active">#878787</color>
+	<color name="calm_text_color">#1d1d1b</color>
+	<color name="calm_icon_color">#911232</color>
+
+	<color name="calm_gauge_progress_background">#fbd2c4</color>
+	<color name="calm_gauge_progress_foreground">#ed4442</color>
+	<color name="calm_gauge_speed_background">#efefef</color>
+	<color name="calm_gauge_speed_foreground">#bbbcbf</color>
+	<color name="calm_gauge_status_background">@color/calm_text_color</color>
+	<color name="calm_gauge_status_foreground">@color/app_background</color>
+
+	<color name="calm_switch_to_test_or_results_button_background">#bbbcbf</color>
+
+	<color name="splash_screen_text_color">@color/app_background</color>
+	<color name="splash_screen_background">@color/calm_icon_color</color>
+
+	<color name="title_page_start_button_background">#ed4442</color>
+	<color name="title_page_start_button_pressed">@color/calm_text_color</color>
+
+	<color name="menu_foreground">@color/app_background</color>
+	<color name="menu_background">@color/title_page_start_button_background</color>
+	<!-- ff2d313a -->
+
+	<color name="ilr_timer_color">@color/title_page_start_button_background</color>
+	<color name="ilr_inner_ring_color">@color/calm_switch_to_test_or_results_button_background</color>
+	<color name="ilr_outer_ring_color">@color/title_page_start_button_background</color>
+	<color name="ilr_most_outer_ring_color">#efefef</color>
+	<color name="ilr_progress_border">#7f8183</color>
+
+	<color name="black">#ff000000</color>
+	<color name="titlepage_tint">#ffffff</color>
+	<!-- <color name="titlepage_tint">#ff3a3a3a</color> -->
+
+	<color name="titlepage_stats_background">#ff5f5f5f</color>
+	<color name="titlepage_stats_foreground">#ffffffff</color>
+	<color name="titlepage_stats_divider_color">#ff56595f</color>
+
+	<color name="app_text_color">@color/calm_text_color</color>
+	<color name="app_color_active">#ffefefef</color>
+	<color name="app_color_inactive">#ffefefef</color>
+
+	<color name="app_text_color_light">#fffaf8f6</color>
+	<color name="app_tint_antenna_image_color">#ffefefef</color>
+
+	<color name="app_graph_vertical_desc_color">#C82fc84f</color>
+
+	<color name="result_green">#ff116e30</color>
+	<color name="result_info">#b0585858</color>
+	<color name="result_red">#ff79423f</color>
+
+	<color name="overlay_transparent_black_dark">#c0000000</color>
+	<color name="transparent">#00000000</color>
+
+	<color name="gauge_progress_dynamic">#ff89b1ac</color>
+	<color name="gauge_progress_background">#ff445157</color>
+	<color name="gauge_progress_overlay">#ff2d313a</color>
+
+	<color name="gauge_speed_dynamic">#ffffffff</color>
+	<color name="gauge_speed_background">#ff575a61</color>
+
+	<color name="gauge_signal_dynamic">#ffd2a315</color>
+	<color name="gauge_signal_background">#ff4e4832</color>
+
+	<color name="classification_green">#FF59B100</color>
+	<color name="classification_yellow">#FFFEC826</color>
+	<color name="classification_red">#FFB22D00</color>
+	<color name="classification_grey">#50FFFFFF</color>
+	<color name="classification_none">#00000000</color>
+
+	<color name="cpu_classification_green">#FF59B100</color>
+	<color name="cpu_classification_yellow">#FFFEC826</color>
+	<color name="cpu_classification_red">#FFe33900</color>
+	<color name="cpu_classification_grey">#50FFFFFF</color>
+
+	<color name="defaut_list_header_background">@color/calm_gauge_background</color>
+
+	<color name="title_page_start_button_cirlce_border">#ff308c30</color>
+	<color name="title_page_start_button_foreground">#ff002664</color>
+</resources>

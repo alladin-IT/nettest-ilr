@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+
+apply from: '../java7.gradle'
+
+dependencies {
+    compile group: 'joda-time', name: 'joda-time', version: joda_time_version
+	compile group: 'com.google.code.gson', name: 'gson', version: gson_version
+	compile group: 'com.fatboyindustrial.gson-jodatime-serialisers', name: 'gson-jodatime-serialisers', version: gson_jodatime_serialisers_version
+	
+	testCompile group: 'junit', name: 'junit', version: '4.+'	
+}

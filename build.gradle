@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+
+        maven { url 'http://repo.spring.io/plugins-release' }
+        maven { url 'http://repo.spring.io/milestone' }
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+
+    dependencies {
+        classpath group: 'com.android.tools.build', name: 'gradle', version: '2.3.3'
+        classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: spring_boot_version
+    }
+}
+
+allprojects {
+    group = 'at.alladin.nettest'
+    version = '1.0'
+
+    repositories {
+		 maven { url 'https://maven.twttr.com/' }
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+        maven { url 'http://repository.pentaho.org/artifactory/repo/' }
+        maven { url 'http://maven.restlet.com' }
+    }
+}
+
+subprojects {
+    apply from: '../git.gradle'
+}
+
+defaultTasks 'build'

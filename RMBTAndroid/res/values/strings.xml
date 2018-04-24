@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013-2015 alladin-IT GmbH
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+	<string name="splash_screen_title">ANT</string>
+
+	<string name="error_no_internet">No internet connection\navailable</string>
+	<string name="error_no_data">No data available.</string>
+	<string name="error_history_no_data_no_connection">No internet connection. Loading data failed.</string>
+
+	<string name="main_dialog_registration_title">Registration…</string>
+	<string name="main_dialog_registration_text">Client is being registered. Please wait…</string>
+
+	<string name="main_dialog_reload_title">Reloading…</string>
+	<string name="main_dialog_reload_text">Reloading data; please wait…</string>
+
+	<string name="preferences">Settings</string>
+
+	<string name="preferences_contract_dl_mbits">Download Mbit/s</string>
+	<string name="preferences_contract_dl_mbits_sum">Download Mbit/s of your contract</string>
+
+	<string name="preferences_contract_ul_mbits">Upload Mbit/s</string>
+	<string name="preferences_contract_ul_mbits_sum">Upload Mbit/s of your contract</string>
+
+	<string name="preferences_contract_name">Contract name</string>
+	<string name="preferences_contract_name_sum">Contract name</string>
+
+	<string name="preferences_play_jingle">Sound</string>
+	<string name="preferences_play_jingle_sum">Play jingle on test start and test end</string>
+
+	<string name="preferences_category_test">Preferences</string>
+	<string name="preferences_category_contract_info">Contract information</string>
+
+	<string name="preferences_category_nerd_mode">Nerd mode</string>
+	<string name="preferences_nerd_mode">Nerd mode</string>
+	<string name="preferences_nerd_mode_sum">Show andvanced information</string>
+
+	<string name="preferences_enable_qos">QoS measurements</string>
+	<string name="preferences_enable_qos_sum">Enable QoS measurements</string>
+
+	<string name="preferences_location_settings">Location</string>
+	<string name="preferences_location_settings_sum">Change location settings</string>
+
+	<string name="preferences_language_settings">Language</string>
+	<string name="preferences_language_settings_sum">Change language settings</string>
+
+	<string name="preferences_no_gps">No GPS</string>
+	<string name="preferences_no_gps_sum">Do not use GPS during test</string>
+
+	<string name="preferences_tag">Tag</string>
+	<string name="preferences_tag_sum">Add a custom tag to each measurement</string>
+
+	<string name="preferences_loop_mode">Loop</string>
+	<string name="preferences_loop_mode_sum">Measurements will re-run in a loop</string>
+
+	<string name="preferences_loop_mode_max_tests">Loop max tests</string>
+	<string name="preferences_loop_mode_max_tests_sum">Maximum amount of measurements to run if loop mode is active (0 = run forever)</string>
+
+	<string name="preferences_loop_mode_min_delay">Loop min delay</string>
+	<string name="preferences_loop_mode_min_delay_sum">Minimum time in seconds between two measurements if loop mode is active</string>
+
+	<string name="preferences_loop_mode_max_delay">Loop max delay</string>
+	<string name="preferences_loop_mode_max_delay_sum">Maximum time in seconds between two measurements if loop mode is active</string>
+
+	<string name="preferences_loop_mode_movement">Loop movement</string>
+	<string name="preferences_loop_mode_movement_sum">Movement in meters to trigger next measurement in loop mode</string>
+
+	<string name="preferences_loop_mode_gps">Use GPS when loop mode is active</string>
+	<string name="preferences_loop_mode_gps_sum">Use GPS between two measurements in loop mode</string>
+
+	<string name="preferences_ndt">NDT</string>
+	<string name="preferences_ndt_sum">Activate extended measurement</string>
+
+	<string name="preferences_ic">Publish personal data</string>
+
+	<string name="preferences_ipv4_only">IPv4 only</string>
+	<string name="preferences_ipv4_only_sum">Never use IPv6</string>
+
+	<string name="preferences_anonym_mode">Anonymous mode</string>
+	<string name="preferences_anonym_mode_sum">Disassociate all measurements from client-UUID</string>
+
+	<string name="preferences_category_developer">Development</string>
+	<string name="preferences_category_loop_mode">Loop mode</string>
+	<string name="preferences_category_developer_control_server">Control server</string>
+	<string name="preferences_category_developer_map_server">Map server</string>
+	<string name="preferences_category_developer_qos_server">QoS server</string>
+	<string name="preferences_category_developer_debug">Debugging</string>
+
+	<string name="preferences_dev_control_override">Override control server</string>
+	<string name="preferences_dev_control_override_sum">Activate custom settings for control server</string>
+
+	<string name="preferences_dev_control_host">Control host</string>
+	<string name="preferences_dev_control_host_sum">Override URL of control server</string>
+
+	<string name="preferences_dev_control_port">Control port</string>
+	<string name="preferences_dev_control_port_sum">Override port of control server</string>
+
+	<string name="preferences_dev_control_ssl">Control server SSL</string>
+	<string name="preferences_dev_control_ssl_sum">Use encrypted connection to control server</string>
+
+	<string name="preferences_dev_map_override">Override map server</string>
+	<string name="preferences_dev_map_override_sum">Activate custom settings for map server</string>
+
+	<string name="preferences_dev_map_host">Map host</string>
+	<string name="preferences_dev_map_host_sum">Override URL of map server</string>
+
+	<string name="preferences_dev_map_port">Map port</string>
+	<string name="preferences_dev_map_port_sum">Override port of map server</string>
+
+	<string name="preferences_dev_map_ssl">Map server SSL</string>
+	<string name="preferences_dev_map_ssl_sum">Use encrypted connection to map server</string>
+
+	<string name="preferences_dev_qos_ssl" >QoS server SSL</string>
+	<string name="preferences_dev_qos_ssl_sum" >Use encrypted connection to QoS server</string>
+
+	<string name="preferences_dev_debug_sysout" >Store error output in file</string>
+	<string name="preferences_dev_debug_sysout_sum" >Stores error output in a text file located in the "qosdebug" folder</string>
+
+	<string name="menu_button_start">Start</string>
+	<string name="menu_button_start_again">Run\nagain</string>
+	<string name="menu_button_start_again_details">Run again</string>
+	<string name="menu_button_title_page">Home</string>
+	<string name="menu_button_map">Map</string>
+	<string name="menu_button_history">History</string>
+	<string name="menu_button_help">Help</string>
+	<string name="menu_button_statistics">Statistics</string>
+	<string name="menu_button_settings">Settings</string>
+	<string name="menu_button_about">Info</string>
+	<string name="menu_button_log">Logging</string>
+	<string name="menu_button_share">Share</string>
+	<string name="menu_button_netstat">Netstat</string>
+
+	<string name="news_title">News</string>
+	<string name="news_no_message">No new message.</string>
+
+	<string name="about_version_title">Version</string>
+	<string name="about_clientid_title">Client UUID</string>
+	<string name="about_clientid_toast">Client UUID has been copied to clipboard.</string>
+	<string name="about_web_title">Web</string>
+	<string name="about_email_title">E-mail</string>
+	<string name="about_email_sending">Sending e-mail…</string>
+	<string name="about_terms_title">Privacy Policy</string>
+	<string name="about_terms_line1">Privacy Policy and Terms of Use</string>
+	<string name="about_git_title" translatable="false">Git Repository</string>
+	<string name="about_git_line1" translatable="false">https://github.com/alladin-IT/open-rmbt</string>
+	<string name="about_git_link" translatable="false">https://github.com/alladin-IT/open-rmbt</string>
+	<string name="about_dev_title">Development</string>
+	<string name="about_dev_line1" translatable="false">alladin-IT GmbH</string>
+	<string name="about_dev_line2" translatable="false">https://alladin.at</string>
+	<string name="about_dev_link" translatable="false">https://alladin.at</string>
+	<string name="about_gms_legal_title">Google Play</string>
+	<string name="about_gms_legal_line1">Google Play Services Legal Notice</string>
+	<string name="about_test_counter_title">Test Counter</string>
+
+	<!-- TERMS -->
+
+	<string name="terms">Privacy Policy and Terms of Use</string>
+
+	<string name="terms_accept_button">I agree</string>
+	<string name="terms_accept_button_continue">Continue</string>
+	<string name="terms_decline_button">Decline</string>
+
+	<string name="terms_switch_to_settings">Directly to settings</string>
+
+	<string name="terms_ic_header">Publish personal data</string>
+	<string name="terms_ic_accept_text"><b>Publish personal data.</b></string>
+
+	<string name="terms_ndt_header">Optional, more comprehensive NDT-Test</string>
+	<string name="terms_ndt_accept_text"><b>I wish to run the optional NDT-Test.</b></string>
+	<string name="terms_ndt_back_button">Back</string>
+	<string name="terms_ndt_accept_button">Continue</string>
+
+	<string name="loop_notification_ticker">Loop mode is active…</string>
+	<string name="loop_notification_title">Loop mode active</string>
+	<string name="loop_notification_text">Touch to cancel Loop mode</string>
+
+	<string name="loop_started">Loop mode started.</string>
+	<string name="loop_already_active">Loop mode is already active.</string>
+
+	<string name="test_mbps">Mbit/s</string>
+	<string name="test_ms">ms</string>
+	<string name="test_dbm">dBm</string>
+	<string name="test_location_km_h">km/h</string>
+	<string name="test_location_m">m</string>
+	<string name="test_location_sat">satellites</string>
+	<string name="test_location_gps">GPS</string>
+	<string name="test_location_network">Network</string>
+	<string name="test_location_dir_n">N</string>
+	<string name="test_location_dir_e">E</string>
+	<string name="test_location_dir_s">S</string>
+	<string name="test_location_dir_w">W</string>
+
+	<string name="test_notification_text">Measurement is still running in the background.</string>
+	<string name="test_dialog_error_title">Error…</string>
+	<string name="test_dialog_error_text">There has been an error during measurement.</string>
+	<string name="test_dialog_error_control_server_conn">Connection to test server cannot be established.</string>
+	<string name="test_toast_error_text_qos">Error during QoS measurement.</string>
+
+	<string name="test_dialog_abort_title">Abort…</string>
+	<string name="test_dialog_abort_text">Do you really want to cancel ongoing measurement?</string>
+	<string name="test_dialog_abort_yes">Cancel measurement</string>
+	<string name="test_dialog_abort_no">Continue measurement</string>
+
+	<string name="history_button_sync">Sync</string>
+	<string name="history_button_filter">Filter</string>
+	<string name="history_device">Device</string>
+	<string name="history_type">Access</string>
+	<string name="history_date">Date</string>
+	<string name="history_down">Down\nMbit/s</string>
+	<string name="history_up">Up\nMbit/s</string>
+	<string name="history_ping">Ping\nms</string>
+
+	<string name="history_filter">Filter</string>
+	<string name="history_filter_networks">Network Type</string>
+	<string name="history_filter_devices">Device</string>
+	<string name="history_filter_result_number">Number of Results</string>
+	<string name="history_filter_result_number_25">Show only 25 newest results</string>
+
+	<string name="history_context_menu_delete">Remove this measurement?</string>
+	<string name="history_delete_item_progress_info">Request is being processed by the server. Please wait...</string>
+	<string name="history_delete_item_progress_title">Disassociation</string>
+	<string name="history_delete_item_failed">An error ocurred during request. Measurement could not be disassociated. Please try again later.</string>
+
+	<string name="result_measurement">Measurement</string>
+	<string name="result_net">Network</string>
+
+	<string name="result_details">Details</string>
+
+	<string name="result_category_tests">Tests</string>
+	<string name="result_description">Description</string>
+
+	<string name="sync_info_text">To merge history of two different devices, request sync code of one device and enter it into the other.</string>
+	<string name="sync_request_code_button">Request Code</string>
+	<string name="sync_enter_code_button">Enter Code</string>
+
+	<string name="sync_enter_code_header">Code entry</string>
+	<string name="sync_enter_code_msg">Code</string>
+	<string name="sync_enter_code_desc">Please enter sync-code received on other device.</string>
+	<string name="sync_enter_code_length">Length of sync code must be 12</string>
+
+	<string name="sync_request_code_header">Your synchronisation code is:</string>
+	<string name="sync_request_code_msg">Retrieving code…</string>
+	<string name="sync_request_code_desc">Please enter the code shown above on other device to synchronise them.</string>
+	<string name="sync_request_code_context_copy">Copy code</string>
+
+	<!-- Map -->
+	<string name="map_filter_header">Map Filter</string>
+	<string name="map_choose_header">Choose Map</string>
+
+	<string name="map_appearance_header">Map Appearance</string>
+	<string name="map_appearance_nosat_title">Normal View</string>
+	<string name="map_appearance_nosat_summary">Map shows normal view</string>
+	<string name="map_appearance_sat_title">Satellite View</string>
+	<string name="map_appearance_sat_summary">Map shows satellite view</string>
+
+	<string name="map_overlay_header">Map Overlay</string>
+	<string name="map_overlay_auto_title">Automatic</string>
+	<string name="map_overlay_auto_summary">Map switches automatically between heatmap and points</string>
+	<string name="map_overlay_heatmap_title">Heatmap</string>
+	<string name="map_overlay_heatmap_summary">Map shows results as heatmap</string>
+	<string name="map_overlay_points_title">Points</string>
+	<string name="map_overlay_points_summary">Map shows results as points</string>
+	<string name="map_overlay_shapes_title">Shapes</string>
+	<string name="map_overlay_shapes_summary">Map shows results as shapes</string>
+	<string name="map_overlay_regions_title">Regions</string>
+	<string name="map_overlay_regions_summary"></string>
+	<string name="map_overlay_municipality_title">Municipality</string>
+	<string name="map_overlay_municipality_summary"></string>
+	<string name="map_overlay_settlements_title">Settlements</string>
+	<string name="map_overlay_settlements_summary"></string>
+	<string name="map_overlay_whitespots_title">White spots</string>
+	<string name="map_overlay_whitespots_summary"></string>
+
+	<string name="map_balloon_overlay_header">Measurements</string>
+
+	<!-- Test -->
+	<string name="test_progress_title">Connecting…</string>
+	<string name="test_progress_text">Connection to test server is being established. Please wait…</string>
+	<string name="test_progress_text_wait">Test server is currently busy. Measurement will start {0,choice,0#shortly|1#in 1 second|1&lt;in {0} seconds}. Please wait…</string>
+	<string name="test_bottom_test">Status: {0}\nServer: {1}\nIP: {2}\n{3}\n{4}</string>
+	<string name="test_bottom_test_status_init">Initializing</string>
+	<string name="test_bottom_test_status_ping">Ping</string>
+	<string name="test_bottom_test_status_down">Download</string>
+	<string name="test_bottom_test_status_init_up">Initializing Upload</string>
+	<string name="test_bottom_test_status_up">Upload</string>
+	<string name="test_bottom_test_status_end">Finalizing</string>
+	<string name="test_bottom_test_status_error">Error</string>
+	<string name="test_bottom_test_status_aborted">Aborted</string>
+	<string name="test_bottom_text_empty" translatable="false">\n\n\n</string>
+
+	<string name="test_bottom_test_status_ip">IP:</string>
+	<string name="test_bottom_test_status_server">Server:</string>
+
+
+	<!-- QoS values: -->
+
+	<string name="about_control_server_version">Control Server Version</string>
+
+	<string name="preferences_dont_show_menu_on_exit">No menu on close</string>
+	<string name="preferences_dont_show_menu_on_exit_sum">Don\'t show application menu before closing app.</string>
+
+	<string name="term_signal">Signal</string>
+
+	<string name="result_page_title_qos">QoS</string>
+	<string name="result_page_title_test">Details</string>
+	<string name="result_page_title_menu">Result</string>
+	<string name="result_page_title_graph">Graph</string>
+	<string name="result_page_title_map">Location</string>
+
+	<string name="qos_test_name_website">Reference web page</string>
+	<string name="qos_test_name_http_proxy">Unmodified content</string>
+	<string name="qos_test_name_non_transparent_proxy">Transparent connection</string>
+	<string name="qos_test_name_dns">DNS</string>
+	<string name="qos_test_name_tcp">TCP ports</string>
+	<string name="qos_test_name_udp">UDP ports</string>
+	<string name="qos_test_name_voip">VoIP</string>
+	<string name="qos_test_name_traceroute">Traceroute</string>
+
+	<string name="qos_test_result_error">Error</string>
+	<string name="qos_test_result_all">Results</string>
+
+	<string name="result_graph_download_and_speed">Download (Mbit/s)</string>
+	<string name="result_graph_upload_and_speed">Upload (Mbit/s)</string>
+
+	<string name="result_details_qos_failure">Failed</string>
+	<string name="result_details_qos_success">Succeeded</string>
+	<string name="result_details_qos_info">Additional Results</string>
+
+	<string name="page_title_title_page">Menu</string>
+	<string name="page_title_history">History</string>
+	<string name="page_title_help">Help</string>
+	<string name="page_title_statistics">Statistics</string>
+	<string name="page_title_information">Information</string>
+	<string name="page_title_map">Map</string>
+	<string name="page_title_settings">Settings</string>
+	<string name="page_title_about">Information</string>
+	<string name="page_title_main_result">Measurement Result</string>
+	<string name="page_title_sync">Sync</string>
+	<string name="page_title_qos_result">QoS Results</string>
+	<string name="page_title_information_commissioner">Information Commissioner</string>
+
+	<string name="result_qos_stats">QoS tests</string>
+	<string name="result_qos_error_no_data_available">The QoS tests were not executed.</string>
+
+	<string name="title_screen_cpu">CPU</string>
+	<string name="title_screen_ram">RAM</string>
+	<string name="title_screen_ip">IP</string>
+	<string name="title_screen_ipv4">IPv4</string>
+	<string name="title_screen_ipv6">IPv6</string>
+	<string name="title_screen_cpu_mem_info">CPU &amp; Memory Usage</string>
+	<string name="title_screen_traffic_info">Traffic</string>
+	<string name="title_screen_traffic_in">Traffic in</string>
+	<string name="title_screen_traffic_out">Traffic out</string>
+	<string name="title_screen_location_info">Location</string>
+	<string name="title_screen_traffic">Background Traffic</string>
+	<string name="title_screen_network_id">Network ID:</string>
+
+	<string name="title_screen_whereareyou">Where are you?</string>
+	<string name="title_screen_test_timer">Skip or wait {0,number,##}s</string>
+
+	<string name="title_screen_info_overlay_location">Location</string>
+	<string name="title_screen_info_overlay_ipv4_public">Public IPv4</string>
+	<string name="title_screen_info_overlay_ipv4_private">Private IPv4</string>
+	<string name="title_screen_info_overlay_ipv6_public">Public IPv6</string>
+	<string name="title_screen_info_overlay_ipv6_private">Private IPv6</string>
+	<string name="title_screen_info_overlay_ul_traffic">Upload Traffic</string>
+	<string name="title_screen_info_overlay_dl_traffic">Download Traffic</string>
+	<string name="title_screen_info_overlay_control_server_conn">Control-Server Connection</string>
+	<string name="title_screen_info_overlay_captive_portal_status">Captive Portal</string>
+	<string name="title_screen_info_overlay_is_loopback">Is Loopback</string>
+	<string name="title_screen_info_overlay_is_link_local">Is Link Local</string>
+	<string name="title_screen_info_overlay_location_position">Position</string>
+	<string name="title_screen_info_overlay_location_source">Source</string>
+	<string name="title_screen_info_overlay_location_accuracy">Accuracy</string>
+	<string name="title_screen_info_overlay_location_altitude">Altitude</string>
+	<string name="title_screen_info_overlay_location_age">Age</string>
+	<string name="title_screen_info_overlay_cpu_usage">CPU Usage</string>
+	<string name="title_screen_info_overlay_cpu_cores">CPU Cores</string>
+	<string name="title_screen_info_overlay_mem_usage">Memory Usage</string>
+	<string name="title_screen_info_overlay_mem_total">Total Memory</string>
+	<string name="title_screen_info_overlay_mem_free">Free Memory</string>
+	<string name="title_screen_empty" translatable="false"></string>
+
+	<string name="captive_portal_found">found</string>
+	<string name="captive_portal_not_found">not found</string>
+	<string name="captive_portal_testing">measurement ongoing…</string>
+
+	<string name="not_available">not available</string>
+
+	<string name="test_label_test_info">Test Information</string>
+	<string name="test_label_progress">Progress</string>
+	<string name="test_label_quality_test">Network Services Test</string>
+
+	<string name="netstat_local_address">Local Address</string>
+	<string name="netstat_remote_address">Remote Address</string>
+
+	<string name="start_data_consumption_warning">WARNING! Each execution of {0} requires some data volume. The faster the tested connection the bigger the volume of data transmitted. {1} shall not be deemed responsible for excessive data consumption. When starting {0} the user is aware of possible data consumption and confirms his sole responsibility.</string>
+
+	<string name="show_detailed_results">Show Detailed Results</string>
+
+	<string name="test_gauge_label_init">init</string>
+	<string name="test_gauge_label_ping">ping</string>
+	<string name="test_gauge_label_down">down</string>
+	<string name="test_gauge_label_up">up</string>
+	<string name="test_gauge_label_qos">QoS</string>
+
+	<string name="test_idle" translatable="false">...</string>
+
+	<string name="title_screen_powered_by">Powered by</string>
+</resources>

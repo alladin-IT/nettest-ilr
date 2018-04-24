@@ -1,0 +1,35 @@
+apply from: '../old_jar_project.gradle'
+apply from: '../java7.gradle'
+apply from: '../git.gradle'
+
+dependencies {
+    compile project(':RMBTUtil')
+	compile(project(':nettest-shared')) {
+		exclude group: 'org.postgresql'
+	}
+
+
+    compile group: 'dnsjava', name: 'dnsjava', version: dnsjava_version
+    compile group: 'net.sf.jopt-simple', name: 'jopt-simple', version: jopt_simple_version
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: httpclient_version
+    compile group: 'com.fatboyindustrial.gson-jodatime-serialisers', name: 'gson-jodatime-serialisers', version: gson_jodatime_serialisers_version
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+	compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile group: 'com.j256.ormlite', name: 'ormlite-core', version: '5.0'
+
+	compile group: 'org.yaml', name: 'snakeyaml', version: '1.18'
+}
+
+def revisionPropertiesFile = file("${buildDir}/resources/main/revision.properties")
+
+processResources {
+	doLast {
+    	String revisionProperties = "git.describe=" + gradle.ext.getVersionNameFromGit() + "\n"
+    	revisionProperties = revisionProperties + "git.branch=" + gradle.ext.getBranchFromGit() + "\n"
+    	revisionProperties = revisionProperties + "git.dirty=false \n"
+    	revisionProperties = revisionProperties + "git.id=" + gradle.ext.getHashFromGit() + "\n"
+    	revisionProperties = revisionProperties + "git.revision=" + gradle.ext.getVersionCodeFromGit() + "\n"
+    	revisionProperties = revisionProperties + "build.time=" + System.currentTimeMillis() + "\n"
+    	revisionPropertiesFile.write(revisionProperties, 'UTF-8')
+	}
+}

@@ -1,0 +1,19 @@
+measurementServers:
+  - name: TESTSERVER
+    webAddress: 
+    port: 5231
+    portSsl: 443
+    city: 
+    country: 
+    geoLocation:
+      latitude: 
+      longitude: 
+    webAddressIpv4: 
+    webAddressIpv6: 
+    serverType: SPEED_TCP
+    priority: 0
+    weight: 1
+    active: false
+    secretKey: 
+    selectable: false
+    countries:

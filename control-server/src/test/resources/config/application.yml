@@ -1,0 +1,4 @@
+spring:
+  messages:
+    basename: classpath:/i18n/messages
+    #cache-seconds: ...

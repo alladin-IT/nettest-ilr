@@ -1,0 +1,44 @@
+//gradle.allprojects {
+    gradle.ext.getVersionNameFromGit = {
+        def stdout = new ByteArrayOutputStream()
+        exec {
+            commandLine 'git', 'describe', '--tags', '--always'
+            standardOutput = stdout
+        }
+        return stdout.toString().trim()
+    }
+
+    gradle.ext.getBranchFromGit = {
+        def ciCommitRefName = System.env.CI_COMMIT_REF_NAME
+
+        if (ciCommitRefName != null && ciCommitRefName.length() > 0) {
+          println("In CI context, using CI_COMMIT_REF_NAME (${ciCommitRefName}) instead of 'git symbolic-ref --short HEAD'")
+          return ciCommitRefName
+        }
+
+        def stdoutBranch = new ByteArrayOutputStream()
+        exec {
+        	commandLine 'git', 'symbolic-ref', '--short', 'HEAD'
+        	standardOutput = stdoutBranch
+        }
+        return stdoutBranch.toString().trim()
+    }
+
+    gradle.ext.getHashFromGit = {
+        def stdout = new ByteArrayOutputStream()
+        exec {
+        	commandLine "git", "log", "--pretty=format:'%h'", "-n 1"
+        	standardOutput = stdout
+        }
+        return stdout.toString().trim()
+    }
+
+    gradle.ext.getVersionCodeFromGit = {
+        def stdout = new ByteArrayOutputStream()
+        exec {
+            commandLine 'git', 'rev-list', 'HEAD', '--count'
+            standardOutput = stdout
+        }
+        return stdout.toString().trim().toInteger()
+    }
+//}

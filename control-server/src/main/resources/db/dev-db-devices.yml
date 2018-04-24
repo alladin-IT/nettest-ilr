@@ -1,0 +1,29 @@
+# ===================================================================
+# Devices
+# ===================================================================
+
+devices:
+  - codename: GT-I9300
+    fullname: Galaxy S3
+    source: manual
+    #timestamp: 2016-05-09T12:00:00.1Z
+
+  - codename: Nexus 4
+    fullname: LGE Nexus 4
+    source: manual
+    #timestamp: 2016-05-09T12:00:00.1Z
+
+  - codename: x86_64
+    fullname: Emulator x86_64
+    source: manual
+    #timestamp: 2016-05-09T12:00:00.1Z
+
+  - codename: i386
+    fullname: Emulator i386
+    source: manual
+    #timestamp: 2016-05-09T12:00:00.1Z
+
+  - codename: Nexus 5X
+    fullname: LGE Nexus 5X
+    source: manual
+    #timestamp: 2016-08-08T12:00:00.1Z

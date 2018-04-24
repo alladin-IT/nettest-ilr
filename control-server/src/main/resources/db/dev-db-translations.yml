@@ -1,0 +1,419 @@
+"translationLanguages":
+-   "lang": "en"
+    "translations": 
+        MAP_ALL: All
+        MAP_BROWSER: Browser
+        MAP_DOWNLOAD_SUMMARY: Map shows download speed
+        MAP_FILTER_ALL_DEVICES: All Devices
+        MAP_FILTER_ALL_OPERATORS: All Networks
+        MAP_FILTER_CARRIER: Operator
+        MAP_FILTER_DAYTIME: Daytime
+        MAP_FILTER_DEVICE: Devices
+        MAP_FILTER_DEVICE_SUMMARY: Map for device
+        MAP_FILTER_OTHER: Other Networks
+        MAP_FILTER_PERIOD: Period
+        MAP_FILTER_PERIOD_180_DAYS: 6 Months
+        MAP_FILTER_PERIOD_1_DAY: 1 Day
+        MAP_FILTER_PERIOD_30_DAYS: 1 Month
+        MAP_FILTER_PERIOD_365_DAYS: 1 Year
+        MAP_FILTER_PERIOD_730_DAYS: 2 Years
+        MAP_FILTER_PERIOD_7_DAYS: 1 Week
+        MAP_FILTER_PERIOD_90_DAYS: 3 Months
+        MAP_FILTER_STATISTICAL_METHOD: Statistics
+        MAP_FILTER_STATISTICAL_METHOD_1_SUMMARY: 80% Percentile
+        MAP_FILTER_STATISTICAL_METHOD_1_TITLE: 80% Percentile
+        MAP_FILTER_STATISTICAL_METHOD_2_SUMMARY: Median
+        MAP_FILTER_STATISTICAL_METHOD_2_TITLE: Median
+        MAP_FILTER_STATISTICAL_METHOD_3_SUMMARY: 20% Percentile
+        MAP_FILTER_STATISTICAL_METHOD_3_TITLE: 20% Percentile
+        MAP_FILTER_TECHNOLOGY: Technology
+        MAP_FILTER_TECHNOLOGY_2G: 2G
+        MAP_FILTER_TECHNOLOGY_3G: 3G
+        MAP_FILTER_TECHNOLOGY_3G_4G: 3G/4G
+        MAP_FILTER_TECHNOLOGY_4G: 4G
+        MAP_FILTER_TECHNOLOGY_ANY: 2G/3G/4G
+        MAP_LTE_RSRP_SUMMARY: Map shows LTE signal strengths (RSRP)
+        MAP_MOBILE: Mobile
+        MAP_PING_SUMMARY: Map shows ping time
+        MAP_SIGNAL_SUMMARY: Map shows signal strength
+        MAP_UPLOAD_SUMMARY: Map shows upload speed
+        MAP_WIFI: WiFi (App)
+        RESULT_DB_UNIT: dB
+        RESULT_DETAILS: Test Result (click on hyperlinked values for advanced search)
+        RESULT_DOWNLOAD: Download
+        RESULT_DOWNLOAD_UNIT: Mbps
+        RESULT_DURATION_UNIT: s
+        RESULT_HOME_NETWORK: Home Network
+        RESULT_LTE_RSRP: Signal (4G)
+        RESULT_LTE_RSRP_UNIT: dBm
+        RESULT_MEASUREMENT: Measurement Result
+        RESULT_MOBILE_NETWORK: Mobile Network
+        RESULT_MS_UNIT: ms
+        RESULT_NETWORK_TYPE: Connection
+        RESULT_OPERATOR_NAME: Provider
+        RESULT_PING: Ping
+        RESULT_PING_UNIT: ms
+        RESULT_PROVIDER: Operator
+        RESULT_ROAMING: Roaming
+        RESULT_SHARE_SUBJECT: alladin NetTest result - {0}
+        RESULT_SHARE_TEXT: |-
+          My Result
+          Date/time {0}
+          Download {1}
+          Upload {2}
+          Ping {3}
+          {4}Network type {5}
+          {6}{7}Platform {8}
+          Model {9}
+          {10}{11}
+        RESULT_SHARE_TEXT_LOCATION_ADD: Location {0}
+        RESULT_SHARE_TEXT_MOBILE_ADD: Mobile Network {0}
+        RESULT_SHARE_TEXT_PROVIDER_ADD: Operator {0}
+        RESULT_SHARE_TEXT_RSRP_ADD: Signal Strength (RSRP) {0}
+        RESULT_SHARE_TEXT_SIGNAL_ADD: Signal Strength {0}
+        RESULT_SIGNAL: Signal
+        RESULT_SIGNAL_RSRP: Signal (RSRP)
+        RESULT_SIGNAL_UNIT: dBm
+        RESULT_TOTAL_BYTES_UNIT: MB
+        RESULT_UPLOAD: Upload
+        RESULT_UPLOAD_UNIT: Mbps
+        RESULT_WIFI_LINK_SPEED_UNIT: Mbps
+        RESULT_WIFI_SSID: WiFi SSID
+        SYNC_CLIENT_TEXT: Can't synchronise same device.
+        SYNC_CLIENT_TITLE: Same Device
+        SYNC_CODE_TEXT: Entered code does not exist.
+        SYNC_CODE_TITLE: Wrong Code
+        SYNC_GROUP_TEXT: Devices are already synchronized.
+        SYNC_GROUP_TITLE: Already synchronized
+        SYNC_SUCCESS_TEXT: Synchronisation was successful.
+        SYNC_SUCCESS_TITLE: Successful
+        SYNC_UUID_TEXT: Your client is not registered.
+        SYNC_UUID_TITLE: Unknown Client
+        STATS_OS_RMBTws: Browser
+        dns.failure: 'DNS request failed (resolver: %PARAM dns_objective_resolver%)'
+        dns.success: 'DNS request succeeded (resolver: %PARAM dns_objective_resolver%)'
+        dns.testinfo: |-
+          DNS request for the domain: %PARAM dns_objective_host%
+          Requested Record: %PARAM dns_objective_dns_record%
+      
+          Test Result:
+          DNS Status: %PARAM dns_result_status%
+          DNS Entries: %PARAM dns_result_entries%
+          Test Duration: %PARAM duration_ns 1000000 0 f% ms
+        dns.unknowndomain.failure: 'Requesting a non-existent domain has returned the invalid
+          result: %PARAM dns_result_entries%'
+        dns.unknowndomain.info: |-
+          A non-existent domain (%PARAM dns_objective_host%) was requested to check the response of the domain's DNS %PARAM dns_objective_dns_record% record.
+          The correct answer should be 'NXDOMAIN' (non-existent domain).
+          DNS Status: '%PARAM dns_result_status%';
+          Duration: %PARAM duration_ns 1000000 0 f% ms
+        dns.unknowndomain.success: DNS-request for a non-existent domain succeeded. No entries
+          have been returned.
+        http.failure: Received content differs from the original. Modification is likely.
+        http.success: Received content equals the original. No modification detected.
+        http.testinfo: "Target: '%PARAM http_objective_url%'\nRange: %PARAM http_objective_range%\nDuration:
+          %PARAM duration_ns 1000000000 1 f% s\nLength: %PARAM http_result_length%\nStatus
+          Code: %PARAM http_result_status%\nHash: %PARAM http_result_hash%\nHeader: \n%PARAM
+          http_result_header%"
+        key_additional_report_fields.peak_down_kbit: Peak DL
+        key_additional_report_fields.peak_up_kbit: Peak UL
+        key_adv_spd_deviation_down_kbit: Deviation from advertised DL-Speed
+        key_adv_spd_deviation_up_kbit: Deviation from advertised UL-Speed
+        key_adv_spd_down_kbit: Advertised Download Speed
+        key_adv_spd_option_name: Internet Connection Type
+        key_adv_spd_up_kbit: Advertised Upload Speed
+        key_cell_id: Cell-ID
+        key_cell_id_multiple: Multiple Cells
+        key_cell_name: Cell Name
+        key_client_local_ip: Internal IP
+        key_client_name: Software Name
+        key_client_public_ip: External IP
+        key_client_public_ip_anonymized: External IP Anonymized
+        key_client_public_ip_as: IP Network (AS)
+        key_client_public_ip_as_name: IP Network Name
+        key_client_public_ip_rdns: Hostname
+        key_client_software_version: Software Version
+        key_client_type: ANT Type
+        key_client_version: ANT version
+        key_country_asn: Country of AS
+        key_country_geoip: Country of IP
+        key_country_location: Country of Geo-Location
+        key_device_information_group: Device Information
+        key_duration: Nominal Test Duration
+        key_duration_dl: Duration DL
+        key_duration_ul: Duration UL
+        key_encryption: TLS Encryption
+        key_encryption_false: 'No'
+        key_encryption_true: 'Yes'
+        key_geo_source_gps: GPS
+        key_geo_source_network: Network
+        key_geo_source_browser: Browser
+        key_altitude: Altitude
+        key_heading: Heading
+        key_location: Location
+        key_model: Model
+        key_motion: Motion
+        key_municipality: Municipality
+        key_nat_type: NAT Status
+        key_ndt_details_diag: Details NDT (diag)
+        key_ndt_details_main: Details NDT (main)
+        key_ndt_details_stat: Details NDT (stat)
+        key_network_operator: Mobile Network
+        key_network_operator_name: Network (Display)
+        key_network_sim_operator: Home Network
+        key_network_sim_operator_name: Home Network (Display)
+        key_network_type: Network Type
+        key_num_threads: Parallel Connections DL
+        key_num_threads_ul: Parallel Connections UL
+        key_open_test_uuid: Open Test-ID
+        key_os_version: Platform Version
+        key_ping_median: Ping
+        key_ping_ndt: Latency (NDT)
+        key_ping_variance: Ping Variance
+        key_plattform: Platform
+        key_platform_rmbtws: Browser
+        key_port: Measurement Server Port
+        key_provider: Operator
+        key_provider_information_group: Provider Information
+        key_region: Region
+        key_roaming: Roaming
+        key_server_ip: Measurement Server IP
+        key_server_location_name: Testserver Geo-Location
+        key_server_name: Measurement Server Name
+        key_settlement: Settlement
+        key_signal_rsrp: Signal Strength (RSRP)
+        key_signal_rsrq: Signal Quality (RSRQ)
+        key_signal_strength: Signal Strength
+        key_speed_download: Download Speed
+        key_speed_download_ndt: Download (NDT)
+        key_speed_parameter_group: Speed Parameter
+        key_speed_test_duration: Speedtest Duration
+        key_speed_upload: Upload Speed
+        key_speed_upload_ndt: Upload (NDT)
+        key_tag: Tag
+        key_test_specifications_group: Test Specifications
+        key_testdl_if_bytes_download: DL-Volume NIC (DL-Test)
+        key_testdl_if_bytes_upload: UL-Volume NIC (DL-Test)
+        key_testul_if_bytes_download: DL-Volume NIC (UL-Test)
+        key_testul_if_bytes_upload: UL-Volume NIC (UL-Test)
+        key_time: Test Time
+        key_time_dl: Time Offset DL
+        key_time_ul: Time Offset UL
+        key_timezone: Timezone
+        key_total_bytes: Data Amount ANT-Test
+        key_total_if_bytes: Data Amount NIC
+        key_uuid: Test-ID
+        key_whitespace: White-Spot
+        key_wifi_bssid: WiFi BSSID
+        key_wifi_link_speed: WiFi Link Speed
+        key_wifi_ssid: WiFi SSID
+        key_zip_code: ZIP
+        key_advanced_position_indoor: Indoor
+        key_advanced_position_outdoor: Outdoor
+        name.dns: DNS
+        name.http_proxy: Unmodified Content
+        name.non_transparent_proxy: Transparent Connection
+        name.tcp: TCP Ports
+        name.trace: Traceroute
+        name.udp: UDP Ports
+        name.voip: Voice over IP
+        name.website: Webpage
+        ntp.failure: Request to NST server was manipulated.
+        ntp.success: Request to measurement server was not modified.
+        ntp.testinfo: |-
+          Content '%PARAM nontransproxy_objective_request%' requested from measurement server.
+          The answer was: '%PARAM nontransproxy_result_response%'
+        tcp.failure: Test failed. Connection could not be established.
+        tcp.failure.request: Response '%PARAM tcp_result_out_response%' differs from request.
+        tcp.in.testinfo: |-
+          TCP Incoming:
+          An incoming connection on port %PARAM tcp_objective_in_port% was attempted. Result: %PARAM tcp_result_in%.
+        tcp.out.testinfo: |-
+          TCP Outgoing:
+          An outgoing connection to NST server on port %PARAM tcp_objective_out_port% was attempted.
+        tcp.success: Test succeeded. Connection was established.
+        test.desc.dns: "Target: %PARAM dns_objective_host% \nEntry: %PARAM dns_objective_dns_record%\nResolver:
+          %PARAM dns_objective_resolver%"
+        test.desc.http: 'Target: %PARAM http_objective_url%'
+        test.desc.ntp: |-
+          Port: %PARAM nontransproxy_objective_port%
+          Request: %PARAM nontransproxy_objective_request%
+        test.desc.tcp.in: 'TCP Incoming, Port: %PARAM tcp_objective_in_port%'
+        test.desc.tcp.out: 'TCP Outgoing, Port: %PARAM tcp_objective_out_port%'
+        test.desc.tcp.out.110: E-mail retrieval (POP3, TCP port 110 outgoing)
+        test.desc.tcp.out.143: E-mail retrieval and storage (IMAP, TCP port 143 outgoing)
+        test.desc.tcp.out.21: File Transfer Protocol (FTP, TCP port 21 outgoing)
+        test.desc.tcp.out.22: Secure Login and File Transfers (SSH, TCP port 22 outgoing)
+        test.desc.tcp.out.25: E-mail Transmission (SMTP, TCP port 25 outgoing)
+        test.desc.tcp.out.465: Secure E-mail Transmission (SMTPS, TCP-Port 465 outgoing)
+        test.desc.tcp.out.5060: Control of Communication Sessions (SIP, TCP port 5060 outgoing)
+        test.desc.tcp.out.53: Domain Name Resolving (DNS, TCP port 53 outgoing)
+        test.desc.tcp.out.554: Control of Audio and Visual Media Streaming (RTSP, TCP port
+          554 outgoing)
+        test.desc.tcp.out.585: Secure E-mail Retrieval and Storage (IMAPS, TCP port 585
+          outgoing)
+        test.desc.tcp.out.587: E-mail Transmission (SMTP, TCP port 587 outgoing)
+        test.desc.tcp.out.6881: Peer-to-Peer File Sharing (BitTorrent, TCP port 6881 outgoing)
+        test.desc.tcp.out.80: Website Protocol (HTTP, TCP port 80 outgoing)
+        test.desc.tcp.out.9001: Online Anonymity (TOR, TCP port 9001 outgoing)
+        test.desc.tcp.out.993: Secure E-mail Retrieval and Storage (IMAPS, TCP port 993
+          outgoing)
+        test.desc.tcp.out.995: Secure E-mail Retrieval (POP3S, TCP port 995 outgoing)
+        test.desc.trace: 'Traceroute Target: %PARAM traceroute_objective_host%'
+        test.desc.udp.in: 'UDP Incoming, Port: %PARAM udp_objective_in_port%, Number of
+          Packets: %PARAM udp_objective_in_num_packets%'
+        test.desc.udp.out: 'UDP Outgoing, Port: %PARAM udp_objective_out_port%, Number of
+          Packets: %PARAM udp_objective_out_num_packets%'
+        test.desc.udp.out.123: Time Synchronisation (NTP, UDP port 123 outgoing)
+        test.desc.udp.out.27005: Online Games Streaming (UDP port 27005 outgoing)
+        test.desc.udp.out.27015: Online Games Streaming (UDP port 27015 outgoing)
+        test.desc.udp.out.500: Establishment and Usage of Secure Services (ISAKMP, UDP port
+          500 outgoing)
+        test.desc.udp.out.5004: Streaming of Audio and Visual Media (RTP, UDP port 5004
+          outgoing)
+        test.desc.udp.out.5005: Quality of Service for Audio and Visual Media Streaming
+          (RTCP, UDP port 5005 outgoing)
+        test.desc.udp.out.5060: Communication Sessions (SIP, UDP port 5060 outgoing)
+        test.desc.udp.out.53: Domain Name Resolving (DNS, UDP port 53 outgoing)
+        test.desc.udp.out.554: Control of Audio and Visual Media Streaming (RTSP, UDP port
+          554 outgoing)
+        test.desc.udp.out.7078: Voice over IP (VoIP, UDP port 7078 outgoing)
+        test.desc.udp.out.7082: Voice over IP (VoIP, UDP port 7082 outgoing)
+        test.desc.voip: 'Simulated VoIP call. Duration: %PARAM voip_objective_call_duration
+          1000000 1 f% ms'
+        test.desc.website: 'Target: %PARAM website_objective_url%'
+        test.description: n/a
+        test.dns: DNS is a fundamental internet service to translate domain names to IP
+          addresses. Each DNS test checks if this service is available, if answers are correct
+          and measures server response time.
+        test.http: This test downloads a test web resource (e.g. image) and checks, if it
+          was modified during transport.
+        test.ntp: This test checks if a request is modified by a proxy or other middlebox.
+        test.tcp: TCP is the most common connection-oriented internet protocol. Typical
+          services http for websites or smtp for e-mail.
+        test.test: |-
+          Test
+          test
+          TEST
+        test.timeout.exceeded: Test timeout exceeded. Test failed.
+        test.trace: Traceroute shows the route across IP based networks.
+        test.udp: UDP is an important connectionless internet protocol. Typical services
+          real-time communication like VoIP or video streaming.
+        test.voip: Voice over IP (VoIP) is a technology for the delivery of voice communication
+          over IP based networks.
+        test.website: The website rendering test downloads a reference web page (mobile
+          Kepler page by ETSI), checks completeness, correct rendering and measures duration.
+        timeout: Test was not completed. Timeout exceeded!
+        trace.testinfo: |-
+          Traceroute Test Parameters:
+          Host: %PARAM traceroute_objective_host%
+          Max. Hops: %PARAM traceroute_objective_max_hops%
+      
+          Traceroute Test Results:
+          Hops Needed: %PARAM traceroute_result_hops%
+          Traceroute Result: %PARAM traceroute_result_status%
+      
+          Full Route:
+          %EVAL result=String(nn.parseTraceroute(traceroute_result_details))%
+        traceroute.failure: An error occured during traceroute test.
+        traceroute.success: Traceroute test was successful.
+        udp.failure: UDP-Test failed. Some packets were lost.
+        udp.in.testinfo: |-
+          UDP Incoming:
+          Number of Packets Requested: %PARAM udp_objective_in_num_packets%, Received by Client: %PARAM udp_result_in_num_packets%, Returned to Server: %PARAM udp_result_in_response_num_packets%.
+          Packet Loss Ratio: %PARAM udp_result_in_packet_loss_rate%\\%
+        udp.out.testinfo: |-
+          UDP Outgoing:
+          Sending and receiving packets to NST server on port %PARAM udp_objective_out_port% attempted.
+          Number of Packets Sent: %PARAM udp_objective_out_num_packets%, Packets Received by Server: %PARAM udp_result_out_num_packets%, Packets Received in reverse by Client: %PARAM udp_result_out_response_num_packets%.
+          Packet Loss Ratio: %PARAM udp_result_out_packet_loss_rate%\\%
+        udp.success: UDP test succeeded. All packets were transferred.
+        value_cell_id_multiple: 'True'
+        value_roaming_international: International
+        value_roaming_national: National
+        value_roaming_none: 'No'
+        voip.incoming.packet.failure: "Incoming communication is missing. \nNo incoming
+          voice packet arrived at target."
+        voip.incoming.packet.success: Receiving voice packets on port %PARAM voip_objective_in_port%
+          is possible.
+        voip.jitter.incoming.failure: 'Incoming mean jitter is too high/empty: incoming
+          voice packets are missing.'
+        voip.jitter.incoming.success: Incoming mean jitter is acceptable for VoIP communication
+        voip.jitter.outgoing.failure: 'Outgoing mean jitter is too high/empty: outgoing
+          voice packets are missing.'
+        voip.jitter.outgoing.success: Outgoing mean jitter is acceptable for VoIP communication.
+        voip.outgoing.packet.failure: Outgoing communication is missing. No outgoing voice
+          packet arrived at target.
+        voip.outgoing.packet.success: Sending voice packets to port %PARAM voip_objective_out_port%
+          is possible.
+        voip.testinfo: |-
+          Test Parameters
+          Sample Rate: %PARAM voip_objective_sample_rate%, Bits per Sample: %PARAM voip_objective_bits_per_sample%
+          Call Duration: %PARAM voip_objective_call_duration 1000000 1 f% ms
+          Packet Delay: %PARAM voip_objective_delay 1000000 1 f% ms
+          Payload Type: %EVAL result=String(nn.getPayloadType(voip_objective_payload))%
+          Target Port: %PARAM voip_objective_out_port%
+      
+          Test Results
+      
+          Incoming Voice Stream:
+          Max. Jitter: %PARAM voip_result_in_max_jitter 1000000 2 f% ms
+          Mean Jitter: %PARAM voip_result_in_mean_jitter 1000000 2 f% ms
+          Max. Delta: %PARAM voip_result_in_max_delta 1000000 2 f% ms
+          Skew: %PARAM voip_result_in_skew 1000000 2 f% ms
+          Packets Received: %PARAM voip_result_in_num_packets%
+          Sequence Errors: %PARAM voip_result_in_sequence_error%
+          Shortest/Longest Sequence: %PARAM voip_result_in_short_seq% / %PARAM voip_result_in_long_seq%
+      
+          Outgoing Voice Stream:
+          Max. Jitter: %PARAM voip_result_out_max_jitter 1000000 2 f% ms
+          Mean Jitter: %PARAM voip_result_out_mean_jitter 1000000 2 f% ms
+          Max. Delta: %PARAM voip_result_out_max_delta 1000000 2 f% ms
+          Skew: %PARAM voip_result_out_skew 1000000 2 f% ms
+          Packets Received: %PARAM voip_result_out_num_packets%
+          Sequence Errors: %PARAM voip_result_out_sequence_error%
+          Shortest/Longest Sequence: %PARAM voip_result_out_short_seq% / %PARAM voip_result_out_long_seq%
+        voip.testinfo.long: |
+          Test Parameters
+          Sample Rate: %PARAM voip_objective_sample_rate%, Bits per Sample: %PARAM voip_objective_bits_per_sample%
+          Call Duration: %PARAM voip_objective_call_duration 1000000 1 f% ms
+          Packet Delay: %PARAM voip_objective_delay 1000000 1 f% ms
+          Payload Type: %EVAL result=String(nn.getPayloadType(voip_objective_payload))%
+      
+          Test Results
+          Incoming Voice Stream:
+          Target Port: %PARAM voip_objective_in_port%
+          Max. Jitter: %PARAM voip_result_in_max_jitter 1000000 2 f% ms
+          Mean Jitter: %PARAM voip_result_in_mean_jitter 1000000 2 f% ms
+          Max. Delta: %PARAM voip_result_in_max_delta 1000000 2 f% ms
+          Skew: %PARAM voip_result_in_skew 1000000 2 f% ms
+          Packets Received: %PARAM voip_result_in_num_packets%
+          Sequence Errors: %PARAM voip_result_in_sequence_error%
+          Shortest/Longest Sequence: %PARAM voip_result_in_short_seq% / %PARAM voip_result_in_long_seq%
+      
+          Outgoing Voice Stream:
+          Target Port: %PARAM voip_objective_out_port%
+          Max. Jitter: %PARAM voip_result_out_max_jitter 1000000 2 f% ms
+          Mean Jitter: %PARAM voip_result_out_mean_jitter 1000000 2 f% ms
+          Max. Delta: %PARAM voip_result_out_max_delta 1000000 2 f% ms
+          Skew: %PARAM voip_result_out_skew 1000000 2 f% ms
+          Packets Received: %PARAM voip_result_out_num_packets%
+          Sequence Errors: %PARAM voip_result_out_sequence_error%
+          Shortest/Longest Sequence: %PARAM voip_result_out_short_seq% / %PARAM voip_result_out_long_seq%
+        voip.timeout: Test timeout exceeded. Test failed.
+        website.200: Webpage transferred successfully.
+        website.error: Error occured during test.
+        website.long: |-
+          Transfer of %PARAM website_objective_url% took more than %PARAM website_objective_timeout 1000000000 0 f% s.
+          Duration: %PARAM website_result_duration_ns 1000000000 1 f% s
+        website.not_found: Website not found.
+        website.short: |-
+          Transfer of %PARAM website_objective_url% took less than %PARAM website_objective_timeout 1000000000 0 f% s.
+          Duration: %PARAM website_result_duration_ns 1000000000 1 f% s
+        website.testinfo: |-
+          The transfer of %PARAM website_objective_url% took %PARAM duration_ns 1000000000 1 f% s.
+      
+          Transferred Data DL: %PARAM website_result_rx_bytes 1000 1 f% kB
+          Transferred Data UL: %PARAM website_result_tx_bytes 1000 1 f% kB
+          HTTP Status Code: %PARAM website_result_status%
+        

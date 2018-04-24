@@ -1,0 +1,1607 @@
+{
+   "_id": "05d61bee80a74208a1fa6a46f17ac12f",
+   "_rev": "9-484bdc4c96f97e9f8ed105e0f8d770c4",
+   "implausible": false,
+   "deleted": false,
+   "open_uuid": "a22b7281-ee85-4ddd-9755-cd4a60c6cf99",
+   "open_test_uuid": "4b6c088a-f787-4888-9d7b-1ad17fe79165",
+   "token": "49f5e05a-b6fa-49c3-8c95-8eb4c4b16057_1484212532_Z6OGWBtkWubUnAnmeeAsh08V1us=",
+   "timestamp": "2017-01-12T10:15:52.182+01:00",
+   "source_ip": "10.9.8",
+   "source_ip_anonymized": "10.9.8",
+   "publish_public_data": true,
+   "client_info": {
+       "uuid": "4ac3cb84-05c4-4d51-9620-cf7a59aa5a27",
+       "software_version": "0.1.0-beta",
+       "name": "RMBT",
+       "language": "de",
+       "ip_local": "10.9.8",
+       "ip_local_anonymized": "10.9.8",
+       "ip_local_type": "site_local_ipv4",
+       "time": "2017-01-12T10:15:34.195+01:00",
+       "test_counter": 5,
+       "previous_test_status": "ERROR_SPEEDTEST_END",
+       "software_revision": "?_?",
+       "version": "0.3",
+       "type": "MOBILE",
+       "timezone": "Europe/Vienna"
+   },
+   "device_info": {
+       "platform": "Android",
+       "os_version": "7.1.1(3532671)",
+       "api_level": "25",
+       "device": "bullhead",
+       "model": "Nexus 5X",
+       "fullname": "LGE Nexus 5X",
+       "product": "bullhead"
+   },
+   "mobile_network_info": {
+   },
+   "network_info": {
+       "nat_type": "no_nat_ipv4",
+       "public_ip_asn": 4565,
+       "public_ip_as_name": "MEGAPATH2-US - MegaPath Networks Inc., US",
+       "client_public_ip": "10.9.8",
+       "client_public_ip_anonymized": "10.9.8",
+       "network_group_name": "WLAN",
+       "network_group_type": "WLAN",
+       "network_type": 99,
+       "country_asn": "US",
+       "provider": {
+           "name": "MEGAPATH2-US - MegaPath Networks Inc., US",
+           "shortname": "MEGAPATH2-US",
+           "mapFilterEnabled": true,
+           "asnMappings": [
+               {
+                   "asn": 4565
+               }
+           ],
+           "_id": "provider__MEGAPATH2-US - MegaPath Networks Inc., US",
+           "_rev": "1-29b3b8a0f319753105c32da7e36a2dd1",
+           "doctype": "Provider"
+       }
+   },
+   "speedtest": {
+       "time": "2017-01-12T10:15:34.953+01:00",
+       "speed_upload": 23949,
+       "speed_download": 13295,
+       "ping_shortest": 2502448,
+       "ping_variance": 2065810311634.6,
+       "encryption": "TLSv1.2 (TLS_RSA_WITH_AES_128_GCM_SHA256)",
+       "nominal_duration": 5,
+       "total_test_duration_ns": 17162000,
+       "status": "FINISHED",
+       "bytes_download": 8310461,
+       "bytes_upload": 14362772,
+       "duration_download_ns": 5000600967,
+       "duration_upload_ns": 4797750516,
+       "speed_upload_log": 0.8448218459976784,
+       "speed_download_log": 0.7809220854168964,
+       "total_bytes_download": 11495083,
+       "total_bytes_upload": 31376688,
+       "interface_total_bytes_download": 12635793,
+       "interface_total_bytes_upload": 23876054,
+       "interface_dltest_bytes_download": 8910862,
+       "interface_dltest_bytes_upload": 189813,
+       "interface_ultest_bytes_download": 297524,
+       "interface_ultest_bytes_upload": 16773306,
+       "test_slot": 1484212532,
+       "ping_shortest_log": 0.1327883539188911,
+       "ping_median": 5054320,
+       "ping_median_log": 0.23455424486108334,
+       "relative_time_dl_ns": 4158828383,
+       "relative_time_ul_ns": 11674022986,
+       "num_threads_requested": 3,
+       "num_threads": 3,
+       "target_measurement_server": {
+           "address": "10.9.8.20",
+           "is_encrypted": true,
+           "name": "TESTSERVER ()",
+           "port": 15232,
+           "uuid": "1ddf561c-432c-4000-a38f-4e23e14025d7",
+           "ip": "10.9.8.20"
+       },
+       "pings": [
+           {
+               "value": 5909792,
+               "value_server": 6167994,
+               "relative_time_ns": 34477568209524
+           },
+           {
+               "value": 16559324,
+               "value_server": 5727595,
+               "relative_time_ns": 34477645438073
+           },
+           {
+               "value": 3246823,
+               "value_server": 3003319,
+               "relative_time_ns": 34477706013392
+           },
+           {
+               "value": 32485055,
+               "value_server": 6993071,
+               "relative_time_ns": 34477754998657
+           },
+           {
+               "value": 4020313,
+               "value_server": 4887859,
+               "relative_time_ns": 34477836893405
+           },
+           {
+               "value": 9590157,
+               "value_server": 4914225,
+               "relative_time_ns": 34477892308358
+           },
+           {
+               "value": 4478751,
+               "value_server": 7372037,
+               "relative_time_ns": 34477955928052
+           },
+           {
+               "value": 2502448,
+               "value_server": 2858272,
+               "relative_time_ns": 34478015490454
+           },
+           {
+               "value": 2989271,
+               "value_server": 4164103,
+               "relative_time_ns": 34478056506708
+           },
+           {
+               "value": 3860834,
+               "value_server": 5194415,
+               "relative_time_ns": 34478129118903
+           }
+       ],
+       "speed_raw": {
+           "download": [
+               {
+                   "thread": 0,
+                   "time": 73278809,
+                   "bytes": 4096
+               },
+               {
+                   "thread": 0,
+                   "time": 180190278,
+                   "bytes": 49152
+               },
+               {
+                   "thread": 0,
+                   "time": 282512841,
+                   "bytes": 122880
+               },
+               {
+                   "thread": 0,
+                   "time": 413049625,
+                   "bytes": 192512
+               },
+               {
+                   "thread": 0,
+                   "time": 513658593,
+                   "bytes": 266240
+               },
+               {
+                   "thread": 0,
+                   "time": 630063657,
+                   "bytes": 327680
+               },
+               {
+                   "thread": 0,
+                   "time": 759449659,
+                   "bytes": 389120
+               },
+               {
+                   "thread": 0,
+                   "time": 869163264,
+                   "bytes": 475136
+               },
+               {
+                   "thread": 0,
+                   "time": 969790565,
+                   "bytes": 536576
+               },
+               {
+                   "thread": 0,
+                   "time": 1075001565,
+                   "bytes": 593920
+               },
+               {
+                   "thread": 0,
+                   "time": 1180463659,
+                   "bytes": 663552
+               },
+               {
+                   "thread": 0,
+                   "time": 1286868253,
+                   "bytes": 724992
+               },
+               {
+                   "thread": 0,
+                   "time": 1389789722,
+                   "bytes": 770048
+               },
+               {
+                   "thread": 0,
+                   "time": 1510316817,
+                   "bytes": 851968
+               },
+               {
+                   "thread": 0,
+                   "time": 1636718548,
+                   "bytes": 933888
+               },
+               {
+                   "thread": 0,
+                   "time": 1737582048,
+                   "bytes": 1003520
+               },
+               {
+                   "thread": 0,
+                   "time": 1857200654,
+                   "bytes": 1064960
+               },
+               {
+                   "thread": 0,
+                   "time": 1958385664,
+                   "bytes": 1118208
+               },
+               {
+                   "thread": 0,
+                   "time": 2058625674,
+                   "bytes": 1196032
+               },
+               {
+                   "thread": 0,
+                   "time": 2160735267,
+                   "bytes": 1245184
+               },
+               {
+                   "thread": 0,
+                   "time": 2282691477,
+                   "bytes": 1290240
+               },
+               {
+                   "thread": 0,
+                   "time": 2391010915,
+                   "bytes": 1339392
+               },
+               {
+                   "thread": 0,
+                   "time": 2539006867,
+                   "bytes": 1384448
+               },
+               {
+                   "thread": 0,
+                   "time": 2650229379,
+                   "bytes": 1441792
+               },
+               {
+                   "thread": 0,
+                   "time": 2779891110,
+                   "bytes": 1490944
+               },
+               {
+                   "thread": 0,
+                   "time": 2884275027,
+                   "bytes": 1540096
+               },
+               {
+                   "thread": 0,
+                   "time": 2990446496,
+                   "bytes": 1589248
+               },
+               {
+                   "thread": 0,
+                   "time": 3099204944,
+                   "bytes": 1634304
+               },
+               {
+                   "thread": 0,
+                   "time": 3202584121,
+                   "bytes": 1691648
+               },
+               {
+                   "thread": 0,
+                   "time": 3336303041,
+                   "bytes": 1716224
+               },
+               {
+                   "thread": 0,
+                   "time": 3461461282,
+                   "bytes": 1757184
+               },
+               {
+                   "thread": 0,
+                   "time": 3619638694,
+                   "bytes": 1794048
+               },
+               {
+                   "thread": 0,
+                   "time": 3721455006,
+                   "bytes": 1818624
+               },
+               {
+                   "thread": 0,
+                   "time": 3846018977,
+                   "bytes": 1875968
+               },
+               {
+                   "thread": 0,
+                   "time": 3946391331,
+                   "bytes": 1945600
+               },
+               {
+                   "thread": 0,
+                   "time": 4057034154,
+                   "bytes": 1998848
+               },
+               {
+                   "thread": 0,
+                   "time": 4161427133,
+                   "bytes": 2048000
+               },
+               {
+                   "thread": 0,
+                   "time": 4293982876,
+                   "bytes": 2105344
+               },
+               {
+                   "thread": 0,
+                   "time": 4400880334,
+                   "bytes": 2211840
+               },
+               {
+                   "thread": 0,
+                   "time": 4506155814,
+                   "bytes": 2293760
+               },
+               {
+                   "thread": 0,
+                   "time": 4643179681,
+                   "bytes": 2355200
+               },
+               {
+                   "thread": 0,
+                   "time": 4745828546,
+                   "bytes": 2457600
+               },
+               {
+                   "thread": 0,
+                   "time": 4854589702,
+                   "bytes": 2535424
+               },
+               {
+                   "thread": 0,
+                   "time": 4960165702,
+                   "bytes": 2592768
+               },
+               {
+                   "thread": 0,
+                   "time": 5000600967,
+                   "bytes": 2650112
+               },
+               {
+                   "thread": 1,
+                   "time": 11894532,
+                   "bytes": 4096
+               },
+               {
+                   "thread": 1,
+                   "time": 117394647,
+                   "bytes": 102400
+               },
+               {
+                   "thread": 1,
+                   "time": 223302209,
+                   "bytes": 163840
+               },
+               {
+                   "thread": 1,
+                   "time": 323344511,
+                   "bytes": 294912
+               },
+               {
+                   "thread": 1,
+                   "time": 424232907,
+                   "bytes": 397312
+               },
+               {
+                   "thread": 1,
+                   "time": 536008543,
+                   "bytes": 503808
+               },
+               {
+                   "thread": 1,
+                   "time": 638414282,
+                   "bytes": 634880
+               },
+               {
+                   "thread": 1,
+                   "time": 748933147,
+                   "bytes": 733184
+               },
+               {
+                   "thread": 1,
+                   "time": 850115918,
+                   "bytes": 815104
+               },
+               {
+                   "thread": 1,
+                   "time": 951608167,
+                   "bytes": 913408
+               },
+               {
+                   "thread": 1,
+                   "time": 1058464636,
+                   "bytes": 1019904
+               },
+               {
+                   "thread": 1,
+                   "time": 1160616157,
+                   "bytes": 1101824
+               },
+               {
+                   "thread": 1,
+                   "time": 1284065961,
+                   "bytes": 1196032
+               },
+               {
+                   "thread": 1,
+                   "time": 1398255347,
+                   "bytes": 1294336
+               },
+               {
+                   "thread": 1,
+                   "time": 1498917701,
+                   "bytes": 1380352
+               },
+               {
+                   "thread": 1,
+                   "time": 1605701930,
+                   "bytes": 1478656
+               },
+               {
+                   "thread": 1,
+                   "time": 1707058451,
+                   "bytes": 1589248
+               },
+               {
+                   "thread": 1,
+                   "time": 1812447784,
+                   "bytes": 1654784
+               },
+               {
+                   "thread": 1,
+                   "time": 1913949669,
+                   "bytes": 1765376
+               },
+               {
+                   "thread": 1,
+                   "time": 2014211346,
+                   "bytes": 1835008
+               },
+               {
+                   "thread": 1,
+                   "time": 2121914221,
+                   "bytes": 1908736
+               },
+               {
+                   "thread": 1,
+                   "time": 2232273712,
+                   "bytes": 2019328
+               },
+               {
+                   "thread": 1,
+                   "time": 2332524086,
+                   "bytes": 2076672
+               },
+               {
+                   "thread": 1,
+                   "time": 2433721023,
+                   "bytes": 2121728
+               },
+               {
+                   "thread": 1,
+                   "time": 2569270204,
+                   "bytes": 2170880
+               },
+               {
+                   "thread": 1,
+                   "time": 2673281776,
+                   "bytes": 2236416
+               },
+               {
+                   "thread": 1,
+                   "time": 2773604911,
+                   "bytes": 2306048
+               },
+               {
+                   "thread": 1,
+                   "time": 2874430078,
+                   "bytes": 2371584
+               },
+               {
+                   "thread": 1,
+                   "time": 2978814828,
+                   "bytes": 2437120
+               },
+               {
+                   "thread": 1,
+                   "time": 3185019484,
+                   "bytes": 2457600
+               },
+               {
+                   "thread": 1,
+                   "time": 3293520172,
+                   "bytes": 2564096
+               },
+               {
+                   "thread": 1,
+                   "time": 3459314251,
+                   "bytes": 2613248
+               },
+               {
+                   "thread": 1,
+                   "time": 3561651761,
+                   "bytes": 2650112
+               },
+               {
+                   "thread": 1,
+                   "time": 3737899487,
+                   "bytes": 2666496
+               },
+               {
+                   "thread": 1,
+                   "time": 3846038039,
+                   "bytes": 2740224
+               },
+               {
+                   "thread": 1,
+                   "time": 3960057321,
+                   "bytes": 2781184
+               },
+               {
+                   "thread": 1,
+                   "time": 4070451291,
+                   "bytes": 2838528
+               },
+               {
+                   "thread": 1,
+                   "time": 4175345884,
+                   "bytes": 2912256
+               },
+               {
+                   "thread": 1,
+                   "time": 4383374759,
+                   "bytes": 2953216
+               },
+               {
+                   "thread": 1,
+                   "time": 4483611384,
+                   "bytes": 3092480
+               },
+               {
+                   "thread": 1,
+                   "time": 4596318843,
+                   "bytes": 3149824
+               },
+               {
+                   "thread": 1,
+                   "time": 4704140052,
+                   "bytes": 3190784
+               },
+               {
+                   "thread": 1,
+                   "time": 4807495426,
+                   "bytes": 3244032
+               },
+               {
+                   "thread": 1,
+                   "time": 4912697260,
+                   "bytes": 3321856
+               },
+               {
+                   "thread": 1,
+                   "time": 5001919144,
+                   "bytes": 3342336
+               },
+               {
+                   "thread": 2,
+                   "time": 6049844,
+                   "bytes": 4096
+               },
+               {
+                   "thread": 2,
+                   "time": 118013866,
+                   "bytes": 65536
+               },
+               {
+                   "thread": 2,
+                   "time": 222169918,
+                   "bytes": 98304
+               },
+               {
+                   "thread": 2,
+                   "time": 330914668,
+                   "bytes": 159744
+               },
+               {
+                   "thread": 2,
+                   "time": 436324939,
+                   "bytes": 217088
+               },
+               {
+                   "thread": 2,
+                   "time": 540918439,
+                   "bytes": 266240
+               },
+               {
+                   "thread": 2,
+                   "time": 647967512,
+                   "bytes": 331776
+               },
+               {
+                   "thread": 2,
+                   "time": 754825804,
+                   "bytes": 393216
+               },
+               {
+                   "thread": 2,
+                   "time": 861593159,
+                   "bytes": 438272
+               },
+               {
+                   "thread": 2,
+                   "time": 963422908,
+                   "bytes": 499712
+               },
+               {
+                   "thread": 2,
+                   "time": 1082995108,
+                   "bytes": 561152
+               },
+               {
+                   "thread": 2,
+                   "time": 1184158816,
+                   "bytes": 618496
+               },
+               {
+                   "thread": 2,
+                   "time": 1301001015,
+                   "bytes": 667648
+               },
+               {
+                   "thread": 2,
+                   "time": 1402605504,
+                   "bytes": 712704
+               },
+               {
+                   "thread": 2,
+                   "time": 1504480306,
+                   "bytes": 770048
+               },
+               {
+                   "thread": 2,
+                   "time": 1615561359,
+                   "bytes": 839680
+               },
+               {
+                   "thread": 2,
+                   "time": 1719460119,
+                   "bytes": 892928
+               },
+               {
+                   "thread": 2,
+                   "time": 1823104973,
+                   "bytes": 954368
+               },
+               {
+                   "thread": 2,
+                   "time": 1923591702,
+                   "bytes": 1007616
+               },
+               {
+                   "thread": 2,
+                   "time": 2025138795,
+                   "bytes": 1048576
+               },
+               {
+                   "thread": 2,
+                   "time": 2135326358,
+                   "bytes": 1114112
+               },
+               {
+                   "thread": 2,
+                   "time": 2238242463,
+                   "bytes": 1171456
+               },
+               {
+                   "thread": 2,
+                   "time": 2356259089,
+                   "bytes": 1208320
+               },
+               {
+                   "thread": 2,
+                   "time": 2464236391,
+                   "bytes": 1249280
+               },
+               {
+                   "thread": 2,
+                   "time": 2617350469,
+                   "bytes": 1290240
+               },
+               {
+                   "thread": 2,
+                   "time": 2723679282,
+                   "bytes": 1343488
+               },
+               {
+                   "thread": 2,
+                   "time": 2831727730,
+                   "bytes": 1384448
+               },
+               {
+                   "thread": 2,
+                   "time": 2947226179,
+                   "bytes": 1425408
+               },
+               {
+                   "thread": 2,
+                   "time": 3055342908,
+                   "bytes": 1466368
+               },
+               {
+                   "thread": 2,
+                   "time": 3157439481,
+                   "bytes": 1507328
+               },
+               {
+                   "thread": 2,
+                   "time": 3268904909,
+                   "bytes": 1560576
+               },
+               {
+                   "thread": 2,
+                   "time": 3426849091,
+                   "bytes": 1593344
+               },
+               {
+                   "thread": 2,
+                   "time": 3527388997,
+                   "bytes": 1622016
+               },
+               {
+                   "thread": 2,
+                   "time": 3643050623,
+                   "bytes": 1646592
+               },
+               {
+                   "thread": 2,
+                   "time": 3747054904,
+                   "bytes": 1667072
+               },
+               {
+                   "thread": 2,
+                   "time": 3886415491,
+                   "bytes": 1724416
+               },
+               {
+                   "thread": 2,
+                   "time": 3987167532,
+                   "bytes": 1785856
+               },
+               {
+                   "thread": 2,
+                   "time": 4093853324,
+                   "bytes": 1830912
+               },
+               {
+                   "thread": 2,
+                   "time": 4214409013,
+                   "bytes": 1884160
+               },
+               {
+                   "thread": 2,
+                   "time": 4340512724,
+                   "bytes": 1941504
+               },
+               {
+                   "thread": 2,
+                   "time": 4442918776,
+                   "bytes": 2023424
+               },
+               {
+                   "thread": 2,
+                   "time": 4562954361,
+                   "bytes": 2113536
+               },
+               {
+                   "thread": 2,
+                   "time": 4703404791,
+                   "bytes": 2179072
+               },
+               {
+                   "thread": 2,
+                   "time": 4810314437,
+                   "bytes": 2260992
+               },
+               {
+                   "thread": 2,
+                   "time": 5003401748,
+                   "bytes": 2318336
+               },
+               {
+                   "thread": 2,
+                   "time": 5003420394,
+                   "bytes": 2318336
+               }
+           ],
+           "upload": [
+               {
+                   "thread": 0,
+                   "time": 17262406,
+                   "bytes": 4096
+               },
+               {
+                   "thread": 0,
+                   "time": 118836223,
+                   "bytes": 122880
+               },
+               {
+                   "thread": 0,
+                   "time": 221303720,
+                   "bytes": 229376
+               },
+               {
+                   "thread": 0,
+                   "time": 322156818,
+                   "bytes": 315392
+               },
+               {
+                   "thread": 0,
+                   "time": 457763184,
+                   "bytes": 405504
+               },
+               {
+                   "thread": 0,
+                   "time": 558187322,
+                   "bytes": 516096
+               },
+               {
+                   "thread": 0,
+                   "time": 659962167,
+                   "bytes": 561152
+               },
+               {
+                   "thread": 0,
+                   "time": 764153170,
+                   "bytes": 655360
+               },
+               {
+                   "thread": 0,
+                   "time": 912196551,
+                   "bytes": 794624
+               },
+               {
+                   "thread": 0,
+                   "time": 1024069955,
+                   "bytes": 913408
+               },
+               {
+                   "thread": 0,
+                   "time": 1124284671,
+                   "bytes": 950272
+               },
+               {
+                   "thread": 0,
+                   "time": 1256980476,
+                   "bytes": 1060864
+               },
+               {
+                   "thread": 0,
+                   "time": 1361034626,
+                   "bytes": 1138688
+               },
+               {
+                   "thread": 0,
+                   "time": 1580039137,
+                   "bytes": 1220608
+               },
+               {
+                   "thread": 0,
+                   "time": 1683613878,
+                   "bytes": 1404928
+               },
+               {
+                   "thread": 0,
+                   "time": 1829320346,
+                   "bytes": 1527808
+               },
+               {
+                   "thread": 0,
+                   "time": 1939597007,
+                   "bytes": 1650688
+               },
+               {
+                   "thread": 0,
+                   "time": 2086440481,
+                   "bytes": 1708032
+               },
+               {
+                   "thread": 0,
+                   "time": 2193665956,
+                   "bytes": 1884160
+               },
+               {
+                   "thread": 0,
+                   "time": 2319340290,
+                   "bytes": 1908736
+               },
+               {
+                   "thread": 0,
+                   "time": 2433775003,
+                   "bytes": 2052096
+               },
+               {
+                   "thread": 0,
+                   "time": 2543879662,
+                   "bytes": 2113536
+               },
+               {
+                   "thread": 0,
+                   "time": 2659940454,
+                   "bytes": 2273280
+               },
+               {
+                   "thread": 0,
+                   "time": 2778761987,
+                   "bytes": 2342912
+               },
+               {
+                   "thread": 0,
+                   "time": 2970868441,
+                   "bytes": 2502656
+               },
+               {
+                   "thread": 0,
+                   "time": 3074946150,
+                   "bytes": 2564096
+               },
+               {
+                   "thread": 0,
+                   "time": 3188757173,
+                   "bytes": 2744320
+               },
+               {
+                   "thread": 0,
+                   "time": 3318113415,
+                   "bytes": 2789376
+               },
+               {
+                   "thread": 0,
+                   "time": 3419136134,
+                   "bytes": 2932736
+               },
+               {
+                   "thread": 0,
+                   "time": 3549487548,
+                   "bytes": 3002368
+               },
+               {
+                   "thread": 0,
+                   "time": 3652333004,
+                   "bytes": 3092480
+               },
+               {
+                   "thread": 0,
+                   "time": 3753934371,
+                   "bytes": 3268608
+               },
+               {
+                   "thread": 0,
+                   "time": 3913932274,
+                   "bytes": 3346432
+               },
+               {
+                   "thread": 0,
+                   "time": 4069505444,
+                   "bytes": 3551232
+               },
+               {
+                   "thread": 0,
+                   "time": 4171176257,
+                   "bytes": 3608576
+               },
+               {
+                   "thread": 0,
+                   "time": 4330859099,
+                   "bytes": 3850240
+               },
+               {
+                   "thread": 0,
+                   "time": 4458220534,
+                   "bytes": 3911680
+               },
+               {
+                   "thread": 0,
+                   "time": 4559072481,
+                   "bytes": 4009984
+               },
+               {
+                   "thread": 0,
+                   "time": 4672914870,
+                   "bytes": 4165632
+               },
+               {
+                   "thread": 0,
+                   "time": 4776439143,
+                   "bytes": 4231168
+               },
+               {
+                   "thread": 0,
+                   "time": 4797750516,
+                   "bytes": 4255744
+               },
+               {
+                   "thread": 1,
+                   "time": 99670934,
+                   "bytes": 4096
+               },
+               {
+                   "thread": 1,
+                   "time": 221512418,
+                   "bytes": 126976
+               },
+               {
+                   "thread": 1,
+                   "time": 379702360,
+                   "bytes": 253952
+               },
+               {
+                   "thread": 1,
+                   "time": 525574441,
+                   "bytes": 389120
+               },
+               {
+                   "thread": 1,
+                   "time": 673606583,
+                   "bytes": 532480
+               },
+               {
+                   "thread": 1,
+                   "time": 852653446,
+                   "bytes": 684032
+               },
+               {
+                   "thread": 1,
+                   "time": 1087992173,
+                   "bytes": 839680
+               },
+               {
+                   "thread": 1,
+                   "time": 1658947507,
+                   "bytes": 1011712
+               },
+               {
+                   "thread": 1,
+                   "time": 1839885149,
+                   "bytes": 1179648
+               },
+               {
+                   "thread": 1,
+                   "time": 2012064741,
+                   "bytes": 1359872
+               },
+               {
+                   "thread": 1,
+                   "time": 2315372599,
+                   "bytes": 1552384
+               },
+               {
+                   "thread": 1,
+                   "time": 2517905419,
+                   "bytes": 1757184
+               },
+               {
+                   "thread": 1,
+                   "time": 2824006739,
+                   "bytes": 1970176
+               },
+               {
+                   "thread": 1,
+                   "time": 2929733084,
+                   "bytes": 2195456
+               },
+               {
+                   "thread": 1,
+                   "time": 3097198135,
+                   "bytes": 2199552
+               },
+               {
+                   "thread": 1,
+                   "time": 3198290033,
+                   "bytes": 2428928
+               },
+               {
+                   "thread": 1,
+                   "time": 3392890680,
+                   "bytes": 2441216
+               },
+               {
+                   "thread": 1,
+                   "time": 3495975994,
+                   "bytes": 2695168
+               },
+               {
+                   "thread": 1,
+                   "time": 3645806780,
+                   "bytes": 2699264
+               },
+               {
+                   "thread": 1,
+                   "time": 3752032702,
+                   "bytes": 2961408
+               },
+               {
+                   "thread": 1,
+                   "time": 3962631764,
+                   "bytes": 2969600
+               },
+               {
+                   "thread": 1,
+                   "time": 4230346787,
+                   "bytes": 3248128
+               },
+               {
+                   "thread": 1,
+                   "time": 4331279121,
+                   "bytes": 3522560
+               },
+               {
+                   "thread": 1,
+                   "time": 4584833672,
+                   "bytes": 3547136
+               },
+               {
+                   "thread": 1,
+                   "time": 4693158956,
+                   "bytes": 3817472
+               },
+               {
+                   "thread": 1,
+                   "time": 4943254632,
+                   "bytes": 3862528
+               },
+               {
+                   "thread": 1,
+                   "time": 5045091542,
+                   "bytes": 4145152
+               },
+               {
+                   "thread": 2,
+                   "time": 14093936,
+                   "bytes": 4096
+               },
+               {
+                   "thread": 2,
+                   "time": 132766621,
+                   "bytes": 229376
+               },
+               {
+                   "thread": 2,
+                   "time": 233014214,
+                   "bytes": 385024
+               },
+               {
+                   "thread": 2,
+                   "time": 359524903,
+                   "bytes": 520192
+               },
+               {
+                   "thread": 2,
+                   "time": 460478706,
+                   "bytes": 643072
+               },
+               {
+                   "thread": 2,
+                   "time": 597946610,
+                   "bytes": 778240
+               },
+               {
+                   "thread": 2,
+                   "time": 700091314,
+                   "bytes": 929792
+               },
+               {
+                   "thread": 2,
+                   "time": 803318959,
+                   "bytes": 1052672
+               },
+               {
+                   "thread": 2,
+                   "time": 912599577,
+                   "bytes": 1150976
+               },
+               {
+                   "thread": 2,
+                   "time": 1023547013,
+                   "bytes": 1314816
+               },
+               {
+                   "thread": 2,
+                   "time": 1124282526,
+                   "bytes": 1388544
+               },
+               {
+                   "thread": 2,
+                   "time": 1257342878,
+                   "bytes": 1519616
+               },
+               {
+                   "thread": 2,
+                   "time": 1361195972,
+                   "bytes": 1675264
+               },
+               {
+                   "thread": 2,
+                   "time": 1494135277,
+                   "bytes": 1744896
+               },
+               {
+                   "thread": 2,
+                   "time": 1665323068,
+                   "bytes": 1970176
+               },
+               {
+                   "thread": 2,
+                   "time": 1769071384,
+                   "bytes": 2248704
+               },
+               {
+                   "thread": 2,
+                   "time": 1872665558,
+                   "bytes": 2342912
+               },
+               {
+                   "thread": 2,
+                   "time": 1978343045,
+                   "bytes": 2457600
+               },
+               {
+                   "thread": 2,
+                   "time": 2086643131,
+                   "bytes": 2613248
+               },
+               {
+                   "thread": 2,
+                   "time": 2243074703,
+                   "bytes": 2891776
+               },
+               {
+                   "thread": 2,
+                   "time": 2349149912,
+                   "bytes": 2899968
+               },
+               {
+                   "thread": 2,
+                   "time": 2449388167,
+                   "bytes": 3137536
+               },
+               {
+                   "thread": 2,
+                   "time": 2587271418,
+                   "bytes": 3194880
+               },
+               {
+                   "thread": 2,
+                   "time": 2757311815,
+                   "bytes": 3506176
+               },
+               {
+                   "thread": 2,
+                   "time": 2857640958,
+                   "bytes": 3592192
+               },
+               {
+                   "thread": 2,
+                   "time": 2958353261,
+                   "bytes": 3772416
+               },
+               {
+                   "thread": 2,
+                   "time": 3100430310,
+                   "bytes": 3842048
+               },
+               {
+                   "thread": 2,
+                   "time": 3202579497,
+                   "bytes": 4059136
+               },
+               {
+                   "thread": 2,
+                   "time": 3361937250,
+                   "bytes": 4190208
+               },
+               {
+                   "thread": 2,
+                   "time": 3467498211,
+                   "bytes": 4263936
+               },
+               {
+                   "thread": 2,
+                   "time": 3579509141,
+                   "bytes": 4558848
+               },
+               {
+                   "thread": 2,
+                   "time": 3681092569,
+                   "bytes": 4571136
+               },
+               {
+                   "thread": 2,
+                   "time": 3782011627,
+                   "bytes": 4935680
+               },
+               {
+                   "thread": 2,
+                   "time": 3914602757,
+                   "bytes": 4952064
+               },
+               {
+                   "thread": 2,
+                   "time": 4015666451,
+                   "bytes": 5050368
+               },
+               {
+                   "thread": 2,
+                   "time": 4122033885,
+                   "bytes": 5328896
+               },
+               {
+                   "thread": 2,
+                   "time": 4259086636,
+                   "bytes": 5369856
+               },
+               {
+                   "thread": 2,
+                   "time": 4371186693,
+                   "bytes": 5689344
+               },
+               {
+                   "thread": 2,
+                   "time": 4497723026,
+                   "bytes": 5795840
+               },
+               {
+                   "thread": 2,
+                   "time": 4598565630,
+                   "bytes": 5849088
+               },
+               {
+                   "thread": 2,
+                   "time": 4700299963,
+                   "bytes": 6135808
+               },
+               {
+                   "thread": 2,
+                   "time": 4856303729,
+                   "bytes": 6250496
+               },
+               {
+                   "thread": 2,
+                   "time": 4960442312,
+                   "bytes": 6270976
+               },
+               {
+                   "thread": 2,
+                   "time": 4994726032,
+                   "bytes": 6328320
+               }
+           ]
+       }
+   },
+   "qos": {
+       "status": "IN_PROGRESS",
+       "results": [
+       ]
+   },
+   "locations": [
+   ],
+   "signals": [
+       {
+           "time": "2017-01-12T10:15:34.151+01:00",
+           "wifi_link_speed": 144,
+           "wifi_rssi": -60,
+           "relative_time_ns": -43319691,
+           "network_type_id": 99
+       },
+       {
+           "time": "2017-01-12T10:15:34.177+01:00",
+           "wifi_link_speed": 144,
+           "wifi_rssi": -60,
+           "relative_time_ns": -17785470,
+           "network_type_id": 99
+       },
+       {
+           "time": "2017-01-12T10:15:42.247+01:00",
+           "wifi_link_speed": 144,
+           "wifi_rssi": -55,
+           "relative_time_ns": 8051897573,
+           "network_type_id": 99
+       },
+       {
+           "time": "2017-01-12T10:15:48.304+01:00",
+           "wifi_link_speed": 144,
+           "wifi_rssi": -56,
+           "relative_time_ns": 14109335364,
+           "network_type_id": 99
+       },
+       {
+           "time": "2017-01-12T10:15:51.317+01:00",
+           "wifi_link_speed": 144,
+           "wifi_rssi": -55,
+           "relative_time_ns": 17122652227,
+           "network_type_id": 99
+       }
+   ],
+   "cell_locations": [
+   ],
+   "wifi_info": {
+       "ssid": "alladin",
+       "bssid": "00:18:39:3c:9f:21",
+       "network_id": "13"
+   },
+   "wifi_link_speed": 144,
+   "signal_strength": -60,
+   "extended_test_stat": {
+       "cpu_usage": {
+           "values": [
+               {
+                   "time_ns": 2114292138,
+                   "value": 19.405594
+               },
+               {
+                   "time_ns": 3121908593,
+                   "value": 18.305084
+               },
+               {
+                   "time_ns": 4129820620,
+                   "value": 17.857143
+               },
+               {
+                   "time_ns": 5135602387,
+                   "value": 22.60274
+               },
+               {
+                   "time_ns": 6139385352,
+                   "value": 20.102215
+               },
+               {
+                   "time_ns": 7144406337,
+                   "value": 18.275862
+               },
+               {
+                   "time_ns": 8151347844,
+                   "value": 21.680672
+               },
+               {
+                   "time_ns": 9160232684,
+                   "value": 20.945946
+               },
+               {
+                   "time_ns": 10170931795,
+                   "value": 21.81208
+               },
+               {
+                   "time_ns": 11176794187,
+                   "value": 20.43551
+               },
+               {
+                   "time_ns": 12180984808,
+                   "value": 20.8981
+               },
+               {
+                   "time_ns": 13190616731,
+                   "value": 23.657719
+               },
+               {
+                   "time_ns": 14201260373,
+                   "value": 20.234114
+               },
+               {
+                   "time_ns": 15208887453,
+                   "value": 22.689075
+               },
+               {
+                   "time_ns": 16216507658,
+                   "value": 21.88552
+               },
+               {
+                   "time_ns": 17221515362,
+                   "value": 22.689075
+               }
+           ],
+           "flags": [
+           ]
+       },
+       "mem_usage": {
+           "values": [
+               {
+                   "time_ns": 1111707195,
+                   "value": 93.31811
+               },
+               {
+                   "time_ns": 2117089326,
+                   "value": 93.2317
+               },
+               {
+                   "time_ns": 3125990468,
+                   "value": 93.27738
+               },
+               {
+                   "time_ns": 4133563954,
+                   "value": 93.39417
+               },
+               {
+                   "time_ns": 5137092856,
+                   "value": 93.374344
+               },
+               {
+                   "time_ns": 6141365664,
+                   "value": 93.4892
+               },
+               {
+                   "time_ns": 7147964202,
+                   "value": 93.60276
+               },
+               {
+                   "time_ns": 8157877896,
+                   "value": 93.25454
+               },
+               {
+                   "time_ns": 9167737476,
+                   "value": 93.32478
+               },
+               {
+                   "time_ns": 10174640024,
+                   "value": 93.34116
+               },
+               {
+                   "time_ns": 11178594916,
+                   "value": 93.53445
+               },
+               {
+                   "time_ns": 12184060225,
+                   "value": 94.02575
+               },
+               {
+                   "time_ns": 13198171784,
+                   "value": 93.57173
+               },
+               {
+                   "time_ns": 14205159957,
+                   "value": 93.65771
+               },
+               {
+                   "time_ns": 15213298443,
+                   "value": 93.75317
+               },
+               {
+                   "time_ns": 16218967710,
+                   "value": 93.84324
+               },
+               {
+                   "time_ns": 17226116925,
+                   "value": 93.69111
+               }
+           ],
+           "flags": [
+           ]
+       }
+   },
+   "anonymization": {
+       "done": true
+   },
+   "uuid": "49f5e05a-b6fa-49c3-8c95-8eb4c4b16057",
+   "doctype": "Measurement"
+}

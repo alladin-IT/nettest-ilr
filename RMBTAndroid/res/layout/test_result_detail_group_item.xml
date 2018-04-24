@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <at.alladin.rmbt.android.views.AlladinTextView
+        android:text="@string/ifont_company"
+        style="@style/Alladin.Result.SymbolText"
+        android:id="@+id/test_result_divider_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@color/calm_gauge_background"
+        android:paddingTop="7dp"
+        android:paddingBottom="3dp"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/test_result_divider_icon"
+        android:id="@+id/test_result_divider_title"
+        style="@style/listViewHistoryLabelRowItemLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result_net"
+        android:gravity="center"
+        android:background="@color/calm_gauge_background"
+        android:paddingBottom="7dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_result_divider_title"
+        android:id="@+id/test_result_entry_list"
+        android:orientation="vertical"/>
+
+    <!--<ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_result_divider_title"
+        android:id="@+id/test_result_entry_list" />-->
+</RelativeLayout>

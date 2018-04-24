@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 alladin-IT OG
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    >
+
+    <RelativeLayout
+        android:background="@color/app_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/qos_box_background"
+        android:gravity="center"
+        >
+
+            <at.alladin.rmbt.android.views.AlladinTextView
+                style="@style/Alladin.Result.Qos.Category.Icon"
+                android:background="@drawable/list_selector"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                />
+
+        <!--
+            <at.alladin.rmbt.android.views.AlladinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignRight="@id/icon"
+                android:textColor="@color/classification_red"
+                android:id="@+id/qos_failure_icon"
+                style="@style/Alladin.Result.Qos.Category.Icon.Small"
+                android:layout_below="@id/icon"/>
+
+            <at.alladin.rmbt.android.views.AlladinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignRight="@id/icon"
+                android:textColor="@color/classification_yellow"
+                android:id="@+id/qos_medium_success_icon"
+                style="@style/Alladin.Result.Qos.Category.Icon.Small"
+                android:layout_below="@id/icon"/>
+
+            <at.alladin.rmbt.android.views.AlladinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignRight="@id/icon"
+                android:textColor="@color/classification_green"
+                android:id="@+id/qos_success_icon"
+                style="@style/Alladin.Result.Qos.Category.Icon.Small"
+                android:layout_below="@id/icon"/> -->
+
+
+        <TextView
+            style="@style/Alladin.Result.Qos.Category.Title"
+            android:layout_below="@id/icon"
+            android:background="@drawable/list_selector"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            style="@style/Alladin.Result.Qos.Category.Title"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/qos_type_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="6dp"
+            />
+
+            <at.alladin.rmbt.android.views.AlladinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/qos_type_status"
+                android:layout_below="@id/name"
+                android:layout_alignBaseline="@id/qos_type_status"
+                android:textColor="@color/classification_red"
+                android:id="@+id/qos_failure_icon"
+                style="@style/Alladin.Result.Qos.Category.Icon.Small"
+                />
+
+            <at.alladin.rmbt.android.views.AlladinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/qos_type_status"
+                android:layout_alignBaseline="@id/qos_type_status"
+                android:layout_below="@id/name"
+                android:textColor="@color/classification_yellow"
+                android:id="@+id/qos_medium_success_icon"
+                style="@style/Alladin.Result.Qos.Category.Icon.Small"/>
+
+            <at.alladin.rmbt.android.views.AlladinTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/qos_type_status"
+                android:layout_alignBaseline="@id/qos_type_status"
+                android:layout_below="@id/name"
+                android:textColor="@color/classification_green"
+                android:id="@+id/qos_success_icon"
+                style="@style/Alladin.Result.Qos.Category.Icon.Small"
+                />
+
+
+    </RelativeLayout>
+</FrameLayout>

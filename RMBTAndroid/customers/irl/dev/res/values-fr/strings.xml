@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013-2015 alladin-IT GmbH
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+	<string name="splash_screen_title">ANT</string>
+
+	<string name="error_no_internet">Pas de connexion Internet\ndisponible</string>
+	<string name="error_no_data">Pas de données disponibles.</string>
+	<string name="error_history_no_data_no_connection">Pas de connexion Internet. Chargement des données échoué.</string>
+
+	<string name="main_dialog_registration_title">Enregistrement…</string>
+	<string name="main_dialog_registration_text">Enregistrement client. Veuillez patienter…</string>
+
+	<string name="main_dialog_reload_title">Rechargement…</string>
+	<string name="main_dialog_reload_text">Rechargement des données ; veuillez patienter…</string>
+
+	<string name="preferences">Paramètres</string>
+
+	<string name="preferences_contract_dl_mbits">Download Mbit/s</string>
+	<string name="preferences_contract_dl_mbits_sum">Download Mbit/s de votre contrat</string>
+
+	<string name="preferences_contract_ul_mbits">Upload Mbit/s</string>
+	<string name="preferences_contract_ul_mbits_sum">Upload Mbit/s de votre contrat</string>
+
+	<string name="preferences_contract_name">Nom du contrat</string>
+	<string name="preferences_contract_name_sum">Nom du contrat</string>
+
+	<string name="preferences_play_jingle">Son</string>
+	<string name="preferences_play_jingle_sum">Effet sonore au début et à la fin du test</string>
+
+	<string name="preferences_category_test">Préférences</string>
+	<string name="preferences_category_contract_info">Données de votre contrat</string>
+
+	<string name="preferences_category_nerd_mode">Mode nerd</string>
+	<string name="preferences_nerd_mode">Mode nerd</string>
+	<string name="preferences_nerd_mode_sum">Afficher information avancée</string>
+
+	<string name="preferences_enable_qos">Mesures QoS</string>
+	<string name="preferences_enable_qos_sum">Autoriser mesures QoS</string>
+
+	<string name="preferences_location_settings">Emplacement</string>
+	<string name="preferences_location_settings_sum">Modifier paramètres emplacement</string>
+
+	<string name="preferences_language_settings">Language</string>
+	<string name="preferences_language_settings_sum">Paramètres languages</string>
+
+	<string name="preferences_no_gps">Pas de GPS</string>
+	<string name="preferences_no_gps_sum">Ne pas utiliser le GPS pendant le test</string>
+
+	<string name="preferences_tag">Balise</string>
+	<string name="preferences_tag_sum">Ajoute une balise personnalisée à chaque mesure</string>
+
+	<string name="preferences_loop_mode">Boucle</string>
+	<string name="preferences_loop_mode_sum">Les mesures tourneront à nouveau en boucle</string>
+
+	<string name="preferences_loop_mode_max_tests">Tests max. en boucle</string>
+	<string name="preferences_loop_mode_max_tests_sum">Nombre maximum de mesures lorsque le mode boucle est activé (0 = tourne indéfiniment)</string>
+
+	<string name="preferences_loop_mode_min_delay">Délai min. boucle</string>
+	<string name="preferences_loop_mode_min_delay_sum">Temps minimum (en secondes) entre deux mesures lorsque le mode boucle est activé</string>
+
+	<string name="preferences_loop_mode_max_delay">Délai max. boucle</string>
+	<string name="preferences_loop_mode_max_delay_sum">Temps maximum (en secondes) entre deux mesures lorsque le mode boucle est activé</string>
+
+	<string name="preferences_loop_mode_movement">Mouvement boucle</string>
+	<string name="preferences_loop_mode_movement_sum">Mouvement en mètres pour déclencher la prochaine mesure en mode boucle</string>
+
+	<string name="preferences_loop_mode_gps">Utilise le GPS lorsque le mode boucle est activé</string>
+	<string name="preferences_loop_mode_gps_sum">Utilise le GPS entre deux mesures en mode boucle</string>
+
+	<string name="preferences_ndt">NDT</string>
+	<string name="preferences_ndt_sum">Activer mesure étendue</string>
+
+	<string name="preferences_ic">Publier données personnelles</string>
+
+	<string name="preferences_ipv4_only">IPv4 uniquement</string>
+	<string name="preferences_ipv4_only_sum">Ne jamais utiliser IPv6</string>
+
+	<string name="preferences_anonym_mode">Mode anonyme</string>
+	<string name="preferences_anonym_mode_sum">Dissocier toutes les mesures de l\'UUID client</string>
+
+	<string name="preferences_category_developer">Développement</string>
+	<string name="preferences_category_loop_mode">Mode boucle</string>
+	<string name="preferences_category_developer_control_server">Serveur de contrôle</string>
+	<string name="preferences_category_developer_map_server">Serveur cartographique</string>
+	<string name="preferences_category_developer_qos_server">Serveur QoS</string>
+	<string name="preferences_category_developer_debug">Debogage</string>
+
+	<string name="preferences_dev_control_override">Annuler le serveur de contrôle</string>
+	<string name="preferences_dev_control_override_sum">Activer paramètres personnalisés pour serveur de contrôle</string>
+
+	<string name="preferences_dev_control_host">Contrôler hôte</string>
+	<string name="preferences_dev_control_host_sum">Annuler l\'URL du serveur de contrôle</string>
+
+	<string name="preferences_dev_control_port">Contrôler port</string>
+	<string name="preferences_dev_control_port_sum">Annuler port du serveur de contrôle</string>
+
+	<string name="preferences_dev_control_ssl">Contrôler serveur SSL</string>
+	<string name="preferences_dev_control_ssl_sum">Utiliser une connexion sécurisée pour contrôler le serveur</string>
+
+	<string name="preferences_dev_map_override">Annuler le serveur cartographique</string>
+	<string name="preferences_dev_map_override_sum">Activer paramètres personnalisés pour serveur cartographique</string>
+
+	<string name="preferences_dev_map_host">Hôte carte</string>
+	<string name="preferences_dev_map_host_sum">Annuler URL du serveur cartographique</string>
+
+	<string name="preferences_dev_map_port">Port carte</string>
+	<string name="preferences_dev_map_port_sum">Neutraliser port du serveur cartographique</string>
+
+	<string name="preferences_dev_map_ssl">SSL serveur cartographique</string>
+	<string name="preferences_dev_map_ssl_sum">Utiliser une connexion sécurisée pour le serveur de cartes</string>
+
+	<string name="preferences_dev_qos_ssl" >SSL serveur QoS</string>
+	<string name="preferences_dev_qos_ssl_sum" >Utiliser une connexion sécurisée pour le serveur QoS</string>
+
+	<string name="preferences_dev_debug_sysout" >Sauvegarder la sortie d\'erreur dans fichier</string>
+	<string name="preferences_dev_debug_sysout_sum" >Enregistrer la sortie d\'erreur dans un texte situé dans le dossier &quot;qosdebug&quot;</string>
+
+	<string name="menu_button_start">Démarrage</string>
+	<string name="menu_button_start_again">Lancer\nà nouveau</string>
+	<string name="menu_button_start_again_details">Relancer</string>
+	<string name="menu_button_title_page">Accueil</string>
+	<string name="menu_button_map">Carte</string>
+	<string name="menu_button_history">Historique</string>
+	<string name="menu_button_help">Aide</string>
+	<string name="menu_button_statistics">Statistiques</string>
+	<string name="menu_button_settings">Paramètres</string>
+	<string name="menu_button_about">Info</string>
+	<string name="menu_button_log">Journalisation</string>
+	<string name="menu_button_share">Partager</string>
+	<string name="menu_button_netstat">Netstat</string>
+
+	<string name="news_title">News</string>
+	<string name="news_no_message">Pas de nouveau message.</string>
+
+	<string name="about_version_title">Version</string>
+	<string name="about_clientid_title">UUID client</string>
+	<string name="about_clientid_toast">UUID client copié dans le presse-papiers.</string>
+	<string name="about_web_title">Web</string>
+	<string name="about_email_title">E-mail</string>
+	<string name="about_email_sending">Envoi e-mail en cours…</string>
+	<string name="about_terms_title">Politique de confidentialité</string>
+	<string name="about_terms_line1">Politique de confidentialité et conditions d\'utilisation</string>
+	<string name="about_dev_title">Développement</string>
+	<string name="about_gms_legal_title">Google Play</string>
+	<string name="about_gms_legal_line1">Mention légale services Google Play</string>
+	<string name="about_test_counter_title">Compteur de test</string>
+
+	<!-- TERMS -->
+
+	<string name="terms">Politique de confidentialité et conditions d\'utilisation</string>
+
+	<string name="terms_accept_button">J\'accepte</string>
+	<string name="terms_accept_button_continue">Continuer</string>
+	<string name="terms_decline_button">Refuser</string>
+
+	<string name="terms_switch_to_settings">Directement aux paramètres</string>
+
+	<string name="terms_ic_header">Publier données personnelles</string>
+	<string name="terms_ic_accept_text"><b>Publier données personnelles.</b></string>
+
+	<string name="terms_ndt_header">En option, test NDT plus compréhensible</string>
+	<string name="terms_ndt_accept_text"><b>Je voudrais lancer le test NDT en option.</b></string>
+	<string name="terms_ndt_back_button">Retour</string>
+	<string name="terms_ndt_accept_button">Continuer</string>
+
+	<string name="loop_notification_ticker">Le mode boucle est activé...</string>
+	<string name="loop_notification_title">Mode boucle activé</string>
+	<string name="loop_notification_text">Touche d\'annulation du mode boucle</string>
+
+	<string name="loop_started">Mode boucle lancé.</string>
+	<string name="loop_already_active">Le mode boucle est déjà activé.</string>
+
+	<string name="test_mbps">Mbit/s</string>
+	<string name="test_ms">ms</string>
+	<string name="test_dbm">dBm</string>
+	<string name="test_location_km_h">km/h</string>
+	<string name="test_location_m">m</string>
+	<string name="test_location_sat">Satellites</string>
+	<string name="test_location_gps">GPS</string>
+	<string name="test_location_network">Réseau</string>
+	<string name="test_location_dir_n">N</string>
+	<string name="test_location_dir_e">E</string>
+	<string name="test_location_dir_s">S</string>
+	<string name="test_location_dir_w">O</string>
+
+	<string name="test_notification_text">La mesure continue en tâche de fond.</string>
+	<string name="test_dialog_error_title">Erreur…</string>
+	<string name="test_dialog_error_text">Une erreur est survenue pendant la mesure.</string>
+	<string name="test_dialog_error_control_server_conn">Impossible d\'établir la connexion avec le serveur de test.</string>
+	<string name="test_toast_error_text_qos">Erreur pendant la mesure QoS.</string>
+
+	<string name="test_dialog_abort_title">Interruption…</string>
+	<string name="test_dialog_abort_text">Désirez-vous réellement annuler la mesure en cours ?</string>
+	<string name="test_dialog_abort_yes">Annuler mesure</string>
+	<string name="test_dialog_abort_no">Continuer mesure</string>
+
+	<string name="history_button_sync">Sync</string>
+	<string name="history_button_filter">Filtre</string>
+	<string name="history_device">Appareil</string>
+	<string name="history_type">Accès</string>
+	<string name="history_date">Date</string>
+	<string name="history_down">Down\nMbit/s</string>
+	<string name="history_up">Up\nMbit/s</string>
+	<string name="history_ping">Ping\nms</string>
+
+	<string name="history_filter">Filtre</string>
+	<string name="history_filter_networks">Type de réseau</string>
+	<string name="history_filter_devices">Appareil</string>
+	<string name="history_filter_result_number">Nombre de résultats</string>
+	<string name="history_filter_result_number_25">Afficher uniquement les 25 derniers résultats</string>
+
+	<string name="history_context_menu_delete">Supprimer cette mesure ?</string>
+	<string name="history_delete_item_progress_info">Le serveur traite la requête. Veuillez patienter…</string>
+	<string name="history_delete_item_progress_title">Dissociation</string>
+	<string name="history_delete_item_failed">Un erreur est survenue pendant la requête. La mesure n\'a pu être dissociée. Ré-essaiez plus tard s.v.p..</string>
+
+	<string name="result_measurement">Mesure</string>
+	<string name="result_net">Réseau</string>
+
+	<string name="result_details">Détails</string>
+
+	<string name="result_category_tests">Tests</string>
+	<string name="result_description">Description</string>
+
+	<string name="sync_info_text">Pour fusionner l\'historique de deux périphériques différents, demandez le code sync de l\'un et entre-le dans l\'autre.</string>
+	<string name="sync_request_code_button">Demander code</string>
+	<string name="sync_enter_code_button">Entrer code</string>
+
+	<string name="sync_enter_code_header">Saisir code</string>
+	<string name="sync_enter_code_msg">Code</string>
+	<string name="sync_enter_code_desc">Entre le code sync reçu sur l\'autre appareil.</string>
+	<string name="sync_enter_code_length">Le code sync doit avoir 12 caractères</string>
+
+	<string name="sync_request_code_header">Votre code de synchronisation est :</string>
+	<string name="sync_request_code_msg">Récupération du code…</string>
+	<string name="sync_request_code_desc">Entrez le code affiché ci-dessus sur l\'autre appareil pour les synchroniser.</string>
+	<string name="sync_request_code_context_copy">Copier code</string>
+
+	<!-- Map -->
+	<string name="map_filter_header">Filtre de carte</string>
+	<string name="map_choose_header">Choisissez une carte</string>
+
+	<string name="map_appearance_header">Aspect de la carte</string>
+	<string name="map_appearance_nosat_title">Vue normale</string>
+	<string name="map_appearance_nosat_summary">La carte montre la vue normale</string>
+	<string name="map_appearance_sat_title">Vue satellite</string>
+	<string name="map_appearance_sat_summary">La carte montre la vue satellite</string>
+
+	<string name="map_overlay_header">Superposition de carte</string>
+	<string name="map_overlay_auto_title">Automatique</string>
+	<string name="map_overlay_auto_summary">La carte commute automatiquement entre la carte thermique et les points</string>
+	<string name="map_overlay_heatmap_title">Carte thermique</string>
+	<string name="map_overlay_heatmap_summary">La carte montre les résultats en tant que carte thermique</string>
+	<string name="map_overlay_points_title">Points</string>
+	<string name="map_overlay_points_summary">La carte montre les résultats en tant que points</string>
+	<string name="map_overlay_shapes_title">Formes</string>
+	<string name="map_overlay_shapes_summary">La carte montre les résultats en tant que formes</string>
+	<string name="map_overlay_regions_title">Régions</string>
+	<string name="map_overlay_regions_summary"></string>
+	<string name="map_overlay_municipality_title">Municipalités</string>
+	<string name="map_overlay_municipality_summary"></string>
+	<string name="map_overlay_settlements_title">Villages</string>
+	<string name="map_overlay_settlements_summary"></string>
+	<string name="map_overlay_whitespots_title">Points blancs</string>
+	<string name="map_overlay_whitespots_summary"></string>
+
+	<string name="map_balloon_overlay_header">Mesures</string>
+
+	<!-- Test -->
+	<string name="test_progress_title">En cours de connexion…</string>
+	<string name="test_progress_text">Connexion avec le serveur établie Veuillez patienter…</string>
+	<string name="test_progress_text_wait">Le serveur est actuellement occupé. La mesure va démarrer dans {0,choice,0#shortly|1#in 1 second|1&lt;in {0} seconds}. Veuille patienter…</string>
+	<string name="test_bottom_test">État : {0}\nServer : {1}\nIP : {2}\n{3}\n{4}</string>
+	<string name="test_bottom_test_status_init">Initialisation</string>
+	<string name="test_bottom_test_status_ping">Ping</string>
+	<string name="test_bottom_test_status_down">Download</string>
+	<string name="test_bottom_test_status_init_up">Initialisation de l\'upload</string>
+	<string name="test_bottom_test_status_up">Upload</string>
+	<string name="test_bottom_test_status_end">Finalisation</string>
+	<string name="test_bottom_test_status_error">Erreur</string>
+	<string name="test_bottom_test_status_aborted">Interrompu</string>
+	<string name="test_bottom_test_status_ip">IP :</string>
+	<string name="test_bottom_test_status_server">Serveur :</string>
+
+
+	<!-- QoS values: -->
+
+	<string name="about_control_server_version">Version du serveur de contrôle</string>
+
+	<string name="preferences_dont_show_menu_on_exit">Pas menu avant fermer</string>
+	<string name="preferences_dont_show_menu_on_exit_sum">Ne pas\ afficher l\'application avant fermeture de l\'app.</string>
+
+	<string name="term_signal">Signal</string>
+
+	<string name="result_page_title_qos">QoS</string>
+	<string name="result_page_title_test">Détails</string>
+	<string name="result_page_title_menu">Résultat</string>
+	<string name="result_page_title_graph">Graphique</string>
+	<string name="result_page_title_map">Emplacement</string>
+
+	<string name="qos_test_name_website">Référence page web</string>
+	<string name="qos_test_name_http_proxy">Contenu non modifié</string>
+	<string name="qos_test_name_non_transparent_proxy">Connexion transparente</string>
+	<string name="qos_test_name_dns">DNS</string>
+	<string name="qos_test_name_tcp">Ports TCP</string>
+	<string name="qos_test_name_udp">Ports UDP</string>
+	<string name="qos_test_name_voip">VoIP</string>
+	<string name="qos_test_name_traceroute">Traceroute</string>
+
+	<string name="qos_test_result_error">Erreur</string>
+	<string name="qos_test_result_all">Résultats</string>
+
+	<string name="result_graph_download_and_speed">Download (Mbit/s)</string>
+	<string name="result_graph_upload_and_speed">Upload (Mbit/s)</string>
+
+	<string name="result_details_qos_failure">Échoué</string>
+	<string name="result_details_qos_success">Réussi</string>
+	<string name="result_details_qos_info">Résultats additionnels</string>
+
+	<string name="page_title_title_page">Menu</string>
+	<string name="page_title_history">Historique</string>
+	<string name="page_title_help">Aide</string>
+	<string name="page_title_statistics">Statistiques</string>
+	<string name="page_title_information">Information</string>
+	<string name="page_title_map">Carte</string>
+	<string name="page_title_settings">Paramètres</string>
+	<string name="page_title_about">Information</string>
+	<string name="page_title_main_result">Résultat de la mesure</string>
+	<string name="page_title_sync">Sync</string>
+	<string name="page_title_qos_result">QoS Résultats</string>
+	<string name="page_title_information_commissioner">Commissaire à l\'information</string>
+
+	<string name="result_qos_stats">Tests QoS</string>
+	<string name="result_qos_error_no_data_available">Les tests QoS n\'ont pas été effectués.</string>
+
+	<string name="title_screen_cpu">CPU</string>
+	<string name="title_screen_ram">RAM</string>
+	<string name="title_screen_ip">IP </string>
+	<string name="title_screen_ipv4">IPv4</string>
+	<string name="title_screen_ipv6">IPv6</string>
+	<string name="title_screen_cpu_mem_info">Utilisation CPU et mémoire</string>
+	<string name="title_screen_traffic_info">Trafic</string>
+	<string name="title_screen_traffic_in">Trafic entrant</string>
+	<string name="title_screen_traffic_out">Trafic sortant</string>
+	<string name="title_screen_location_info">Emplacement</string>
+	<string name="title_screen_traffic">Trafic de fond</string>
+	<string name="title_screen_network_id">ID réseau :</string>
+
+	<string name="title_screen_whereareyou">Où êtes-vous?</string>
+	<string name="title_screen_test_timer">Continuez ou attendez {0,number,##}s</string>
+
+	<string name="title_screen_info_overlay_location">Emplacement</string>
+	<string name="title_screen_info_overlay_ipv4_public">IPv4 public</string>
+	<string name="title_screen_info_overlay_ipv4_private">IPv4 privé</string>
+	<string name="title_screen_info_overlay_ipv6_public">IPv6 public</string>
+	<string name="title_screen_info_overlay_ipv6_private">IPv6 privé</string>
+	<string name="title_screen_info_overlay_ul_traffic">Trafic upload</string>
+	<string name="title_screen_info_overlay_dl_traffic">Trafic download</string>
+	<string name="title_screen_info_overlay_control_server_conn">Connexion serveur de contrôle</string>
+	<string name="title_screen_info_overlay_captive_portal_status">Portail captif</string>
+	<string name="title_screen_info_overlay_is_loopback">Is boucle en retour</string>
+	<string name="title_screen_info_overlay_is_link_local">Is lien local</string>
+	<string name="title_screen_info_overlay_location_position">Position</string>
+	<string name="title_screen_info_overlay_location_source">Source</string>
+	<string name="title_screen_info_overlay_location_accuracy">Précision</string>
+	<string name="title_screen_info_overlay_location_altitude">Altitude</string>
+	<string name="title_screen_info_overlay_location_age">Âge</string>
+	<string name="title_screen_info_overlay_cpu_usage">Utilisation CPU</string>
+	<string name="title_screen_info_overlay_cpu_cores">Cœurs CPU</string>
+	<string name="title_screen_info_overlay_mem_usage">Utilisation mémoire</string>
+	<string name="title_screen_info_overlay_mem_total">Mémoire totale</string>
+	<string name="title_screen_info_overlay_mem_free">Mémoire disponible</string>
+	<string name="captive_portal_found">Trouvé</string>
+	<string name="captive_portal_not_found">Pas trouvé</string>
+	<string name="captive_portal_testing">Mesure en cours...</string>
+
+	<string name="not_available">Non disponible</string>
+
+	<string name="test_label_test_info">Information sur le test</string>
+	<string name="test_label_progress">Progression</string>
+	<string name="test_label_quality_test">Test services réseau</string>
+
+	<string name="netstat_local_address">Adresse locale</string>
+	<string name="netstat_remote_address">Adresse distante</string>
+
+	<string name="start_data_consumption_warning">AVERTISSEMENT ! Chaque exécution de {0} requiert un certain volume de données. Plus la connexion testée est rapide, plus le volume de données transmises est grand. {1} ne peut être considéré responsable d\'une consommation excessive de données. L\'utilisateur est au courant de l\'éventuelle consommation de données au démarrage de {0} et en assume l\'entière responsabilité.</string>
+
+	<string name="show_detailed_results">Afficher résultats détaillés</string>
+
+	<string name="test_gauge_label_init">init</string>
+	<string name="test_gauge_label_ping">ping</string>
+	<string name="test_gauge_label_down">down</string>
+	<string name="test_gauge_label_up">up</string>
+	<string name="test_gauge_label_qos">QoS</string>
+
+	</resources>

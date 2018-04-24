@@ -1,0 +1,22 @@
+gradle.ext.customerName = 'irl'
+
+include 'RMBTUtil'
+include 'RMBTSharedCode'
+include 'RMBTClient'
+
+include 'RMBTQoSServer'
+
+include 'spring-data-couchdb'
+include 'mango-query-parser'
+
+include 'nettest-shared'
+include 'nettest-shared-server'
+include 'control-server'
+
+if (System.getProperty('eclipse.application') == null && System.getProperty('skip-android') == null) { // use -Dskip-android on command line
+        println '* Including Android apps'
+
+        include 'RMBTAndroid'
+} else {
+        println '* Skipping Android apps'
+}

@@ -1,0 +1,46 @@
+# ===================================================================
+# Control server database specific properties
+# ===================================================================
+
+databases:  
+  measurement:
+    dbName: measurement
+    createDbIfNotExist: true
+    protocol: http
+    host: localhost
+    port: 5984
+    maxConnections: 100
+    connectionTimeout: 0
+    designDocuments:
+      - General
+      - Measurement
+      #- Client
+  
+  configuration:
+    dbName: configuration
+    createDbIfNotExist: true
+    protocol: http
+    host: localhost
+    port: 5984
+    maxConnections: 100
+    connectionTimeout: 0
+    designDocuments:
+      - General
+      #- Settings
+      - MeasurementServer
+      #- Device
+      - Provider
+      - QosMeasurementObjective
+      - NetworkType
+
+  translation:
+    dbName: translation
+    createDbIfNotExist: true
+    protocol: http
+    host: localhost
+    port: 5984
+    maxConnections: 100
+    connectionTimeout: 0
+    designDocuments:
+      - General
+      - Translation

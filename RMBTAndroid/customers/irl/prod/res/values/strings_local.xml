@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2017-2018 alladin-IT GmbH
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+    <string name="customer_name">ILR</string>
+    <string name="app_name">checkmynet.lu</string>
+    <string name="app_name_api" translatable="false">RMBT</string>
+
+    <string name="test_notification_ticker">checkmynet.lu running…</string>
+    <string name="test_notification_title">checkmynet.lu</string>
+
+    <string name="menu_rtr_web_link"></string>
+    <string name="about_rtr_line1"></string>
+
+    <string name="about_web_line1" translatable="false">https://checkmynet.lu</string>
+    <string name="about_web_link" translatable="false">https://checkmynet.lu</string>
+
+    <string name="about_email_line1" translatable="false">NN.tool@ilr.lu</string>
+    <string name="about_email_email">NN.tool@ilr.lu</string>
+    <string name="about_email_subject">Support request checkmynet.lu</string>
+
+    <string name="terms_accept_text"></string>
+    <integer name="rmbt_terms_version" translatable="false">3</integer>
+
+    <string name="url_statistics">https://checkmynet.lu/statistics</string>
+    <string name="url_help">https://checkmynet.lu/help</string>
+    <string name="url_help_result">https://checkmynet.lu/help</string>
+    <string name="url_terms">https://checkmynet.lu/tc</string>
+
+    <string name="header_image_description" translatable="false">Header image</string>
+</resources>

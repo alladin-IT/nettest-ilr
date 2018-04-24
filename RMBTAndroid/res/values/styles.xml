@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013-2015 alladin-IT GmbH
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TEXT -->
+
+    <style name="textLargeDark" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="textMediumDark" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="textSmallDark" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="textTinyDark" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textLargeLight" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="textMediumLight" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="textSmallLight" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    
+    <style name="textTinyLight" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textTinyGrey" parent="@style/textTinyLight">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textMediumGrey" parent="@style/textMediumLight">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="infoText" parent="@style/textMediumLight"></style>
+
+    <style name="blockHeader" parent="@style/textLargeDark">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="blockHeaderDetail" parent="@style/blockHeader">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="blockHeaderSmall" parent="@style/blockHeader">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="listHeader" parent="@style/textTinyGrey">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="listMedium" parent="@style/textMediumGrey">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+
+    <style name="listViewHistoryLabelRowItem" parent="@style/textTinyLight">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="listViewHistoryLabelRowItemLarge" parent="@style/listViewHistoryLabelRowItem">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+    
+    <style name="listViewHistoryRowItem" parent="@style/textTinyLight"></style>
+
+    <style name="listResultItemTitle" parent="@style/textMediumLight"></style>
+
+    <style name="listResultItemValue" parent="@style/textMediumLight">
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="balloonResultItemHeader" parent="@style/textMediumLight">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:background">@drawable/bg_trans_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="balloonListHeader" parent="@style/listHeader">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="balloonResultItemTitle" parent="@style/listResultItemTitle">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="balloonResultItemValue" parent="@style/listResultItemValue">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- BUTTONS -->
+
+    <style name="textMenuButtonLargeLight" parent="@style/textLargeLight">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/app_text_color_light</item>
+    </style>
+
+    <style name="textMenuForeground" parent="@style/textLargeLight">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/calm_text_color</item>
+    </style>
+
+    <style name="textMenuButtonLarge" parent="@style/textLargeDark">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textMenuButtonMedium" parent="@style/textMediumDark">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textMenuButtonMediumFull" parent="@style/textMediumDark">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textMenuButtonMediumFullDisabled" parent="@style/textMediumDark">
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="textMenuButtonMediumLight" parent="@style/textMediumLight">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textMenuButtonSmallLight" parent="@style/textSmallLight">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textMenuButtonSmall" parent="@style/textTinyDark"></style>
+
+    <!-- CONTAINER -->
+    <style name="listViewQoS">
+        <item name="android:cacheColorHint">@color/app_text_color_light</item>
+        <item name="android:divider">@drawable/bg_trans_light</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:listSelector">@drawable/list_selector</item>
+    </style>
+    
+    
+    <style name="listViewDefault">
+        <item name="android:cacheColorHint">@color/app_text_color</item>
+        <item name="android:divider">@drawable/bg_trans_light</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:listSelector">@drawable/list_selector</item>
+    </style>
+
+    <style name="listViewAbout" parent="@style/listViewDefault">
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="listViewAboutItem">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="listViewHistory" parent="@style/listViewDefault">
+        <item name="android:dividerHeight">2dp</item>
+    </style>
+
+    <style name="listViewHistoryRed" parent="@style/listViewHistory">
+        <item name="android:listSelector">@drawable/list_selector_red</item>
+    </style>
+
+    <style name="listViewHistoryLabelRow">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="listViewResult" parent="@style/listViewDefault">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <!-- Preferences Theming -->
+
+    <style name="preferenceListSeparator" parent="@android:style/Widget.TextView">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="preferenceCategoryTitle" parent="@style/textTinyGrey">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">@color/menu_foreground</item>
+    </style>
+
+    <style name="preferenceTitle" parent="@style/textMediumLight">
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="preferenceSummary" parent="@style/textTinyGrey">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="preferenceListView" parent="@style/listViewDefault"></style>
+
+    <!-- Map filter/choose -->
+    <style name="mapFilterCategoryTitle" parent="@style/textTinyGrey">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="mapFilterTitle" parent="@style/textMediumLight">
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="mapFilterSummary" parent="@style/textTinyGrey">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+
+    <!-- Test Screen -->
+    <style name="testText" parent="@style/textSmallDark">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+    <style name="PreferenceTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="android:popupMenuStyle">@style/AppTheme.PopUpMenu</item>
+    </style>
+    
+    <style name="AppTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="android:popupMenuStyle">@style/AppTheme.PopUpMenu</item>
+        <!--
+         To remove the DONE button from the contextual action bar:
+         -->
+        <item name="android:actionModeCloseButtonStyle">@style/NoCloseButton</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/action_bar_background</item>
+        <item name="android:titleTextStyle">@style/Alladin.ActionBar.Text</item>
+    </style>
+	<style name="Alladin.ActionBar.Text" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/calm_text_color</item>
+		<item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Alladin.ProgressBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/calm_text_color</item>
+        <item name="android:minHeight">15dp</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Ilr.ProgressBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/calm_text_color</item>
+        <item name="android:minHeight">15dp</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="Ilr.ProgressBar.Divider" parent="@android:style/TextAppearance">
+        <item name="android:scaleY">3.5</item>
+    </style>
+
+    <style name="Alladin.Test.ActiveText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/calm_gauge_progress_foreground</item>
+    </style>
+
+    <style name="Alladin.Test.InactiveText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/ilr_progress_border</item>
+    </style>
+
+    <style name="Alladin.Test.InactiveAlladinText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/ilr_progress_border</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.PopUpMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/black</item>
+    </style>
+
+    <style name="Alladin.Splashscreen.Title.Large" parent="@style/textSmallDark">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">72sp</item>
+        <item name="android:textColor">@color/splash_screen_text_color</item>
+    </style>
+
+    <style name="Alladin.Splashscreen.Title.Small" parent="@style/textSmallDark">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/splash_screen_text_color</item>
+    </style>
+
+    <style name="SplashTheme" parent="@android:style/Theme.Holo.NoActionBar">
+        <!-- <item name="android:windowBackground">@drawable/splash_screen</item> -->
+    </style>
+
+    <style name="TabAppTheme">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:background">@drawable/tab_indicator_ab_qos</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="TabTextAppTheme">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">80dip</item>
+    </style>
+
+    <style name="NoCloseButton" parent="@android:style/Widget.ActionButton.CloseMode">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="NkomTheme.TextView.TestInfo.Title" parent="@style/textSmallDark">
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textSize">16sp</item>
+        <!-- <item name="android:lineSpacingExtra">2dp</item> -->
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="NkomTheme.TextView.TestInfo.Result" parent="@style/textSmallDark">
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textSize">26sp</item>
+        <!-- <item name="android:lineSpacingExtra">2dp</item> -->
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="NkomTheme.TextView.TestInfo.Result.Large" parent="@style/textSmallDark">
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textSize">26sp</item>
+        <!-- <item name="android:lineSpacingExtra">2dp</item> -->
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="NkomTheme.TextView.TestInfo.Unit" parent="@style/textSmallDark">
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textSize">16sp</item>
+        <!-- <item name="android:lineSpacingExtra">2dp</item> -->
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="NkomTheme.TextView.TestInfo.Title.Small" parent="@style/textSmallDark">
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textSize">11sp</item>
+        <!-- <item name="android:lineSpacingExtra">2dp</item> -->
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="QoSTheme.EditText.Dark" parent="@android:style/Widget.Holo.EditText">
+        <item name="android:textCursorDrawable">@null</item>
+		<item name="android:textColor">@color/app_text_color</item>
+	</style>
+
+    <style name="QoSTheme.EditText.Light" parent="@android:style/Widget.Holo.EditText">
+        <item name="android:textCursorDrawable">@null</item>
+		<item name="android:textColor">@color/app_text_color</item>
+	</style>
+    	
+	<style name="QoSTheme.TextView.ListItemTitle" parent="@android:style/TextAppearance.Medium">
+	    <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+	</style>
+
+	<style name="QoSTheme.TextView.ListItemDesciption" parent="@android:style/TextAppearance.Medium">
+	    <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+	</style>
+	
+	<style name="QoSTheme.TextView.ListItemMedium" parent="@android:style/TextAppearance.Small">
+	    <item name="android:textColor">@color/app_text_color</item>
+	    <item name="android:textSize">14sp</item>
+        <item name="android:typeface">sans</item>
+	</style>
+
+	<style name="QoSTheme.TextView.ListItemMedium.Light" parent="@android:style/TextAppearance.Small">
+	    <item name="android:textColor">@color/app_text_color_light</item>
+	    <item name="android:textSize">14sp</item>
+        <item name="android:typeface">sans</item>
+	</style>
+	
+		
+	<style name="QoSTheme.TextView.ListItemTitle.Bold" parent="@style/QoSTheme.TextView.ListItemTitle">
+	    <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+	</style>
+	
+    <style name="QoSTheme.TextView.ListItemSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+    
+    <style name="QoSTheme.TextView.Title.Blue" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>        
+	</style>
+
+    <style name="QoSTheme.TextView.Title.White" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>        
+	</style>
+
+    <style name="QoSTheme.TextView.TitleXLarge.White" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>       
+        <item name="android:textSize">22sp</item>
+	</style>
+    
+    <style name="QoSTheme.TextView.Medium.Blue" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>        
+	</style>
+
+    <style name="QoSTheme.TextView.Medium.White" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>        
+	</style>
+
+    <style name="QoSTheme.TextView.Medium.TitlePage" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/titlepage_stats_foreground</item>
+        <item name="android:typeface">sans</item>        
+	</style>
+
+    <style name="QoSTheme.TextView.Large.TitlePage" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/titlepage_stats_foreground</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="QoSTheme.TextView.Largest.TitlePage" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/titlepage_stats_foreground</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="QoSTheme.TextView.Test.QoSProgress" parent="@style/textSmallDark">
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textSize">12sp</item>
+        <!-- <item name="android:lineSpacingExtra">2dp</item> -->
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <style name="QoSTheme.TextView.Test.QoSProgress.Title" parent="@style/textSmallDark">
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textSize">13sp</item>
+        <!-- <item name="android:lineSpacingExtra">2dp</item> -->
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+    
+	<style name="QoSTheme.TextView.Result.ClassificationItem" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Alladin.Result.Icon" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/calm_icon_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="Alladin.Result.Title" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/calm_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Alladin.Result.SubTitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/calm_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Alladin.Nerdmode.BgTraffic.Text" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/calm_gauge_background</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Alladin.Nerdmode.Title.Inactive.Text" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/calm_gauge_background</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Alladin.Nerdmode.Title.Text" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/calm_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Alladin.Nerdmode.Gps.Icon" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/calm_icon_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Alladin.Nerdmode.Network.Title.Text" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/calm_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Alladin.StartScreen.StartButton.Active" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_background</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="Alladin.StartScreen.StartButton.Position.Active" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_background</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Alladin.StartScreen.TestTimer" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/ilr_timer_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Alladin.StartScreen.WhereAreYou" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/calm_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Alladin.StartScreen.PoweredBy" parent="Alladin.StartScreen.WhereAreYou">
+    </style>
+
+    <style name="Alladin.StartScreen.PoweredBy.Icon" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/title_page_start_button_background</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="Alladin.TestScreen.Button.Active" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="Ilr.TestScreen.Button.Active" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="Alladin.TestScreen.TopBar.Icon" parent="@android:style/TextAppearance.Medium">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="Alladin.TestScreen.TopBar.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="Ilr.TestScreen.TopBar.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Alladin.TestScreen.RedoButton.Active" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_background</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="Alladin.Result.Qos.Category.Title" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Alladin.Result.Qos.Category.Icon" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/calm_icon_color</item>
+        <item name="android:textSize">44sp</item>
+    </style>
+
+    <style name="Alladin.Result.Qos.Category.Icon.Small" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">13dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="Alladin.Result.SymbolText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/calm_icon_color</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="Specure.Overlay.Text" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/app_text_color_light</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    
+	<style name="Specure.Overlay.Title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_text_color_light</item>
+        <item name="android:typeface">sans</item>       
+        <item name="android:textSize">22sp</item>
+	</style>
+	
+	<style name="Specure.Widget.Button" parent="@android:style/Widget.Holo.Button">
+	    <item name="android:textColor">@color/app_text_color_light</item>
+	</style>
+</resources>

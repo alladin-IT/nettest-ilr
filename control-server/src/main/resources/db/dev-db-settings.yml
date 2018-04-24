@@ -1,0 +1,276 @@
+# ===================================================================
+# RMBT Settings
+# ===================================================================
+
+controlServerIpv4Host: 
+controlServerIpv6Host:
+
+thresholds:
+  download: "10000;2000"
+  upload: "2000;1000"
+  ping: "25;75"
+  signalMobile: "-85;-101"
+  signalRsrp: "-95;-111"
+  signalWifi: "-61;-76"
+
+advertisedSpeedsEnabled: true
+
+rmbt:
+  duration: 5
+  numThreads: 3
+  numPings: 10
+  geoAccuracyButtonLimit: 2000
+  geoAccuracyDetailLimit: 10000
+  geoDistanceDetailLimit: 3000
+    
+speedtestDetailGroups: 
+  # Provider Information 
+  - key: provider_information_group
+    icon: f
+    values:
+      #ISP name / Provider
+      - key: mobile_network_info.operator_name
+        translation_key: key_network_operator_name
+      #ISP MCC/MNC
+     #mcc mncs disabled in control server? (line 533)
+     # - key: network_info.provider.mccMnc
+      #ISP's country code
+      - key: network_info.country_geoip
+      #SIM provider name
+      - key: mobile_network_info.sim_operator_name
+        translation_key: key_network_sim_operator_name
+      #SIM provider MCC/MNC
+      - key: mobile_network_info.mobile_provider.name
+        translation_key: key_network_operator
+      #Mobile network type / Connection
+      - key: network_info.network_type
+      #IP network (AS)
+      - key: network_info.public_ip_asn
+        translation_key: key_client_public_ip_as
+      #Country of AS
+      - key: network_info.country_asn
+      #Roaming details
+      - key: mobile_network_info.roaming_type
+        translation_key: key_roaming
+      #WiFi SSID
+      - key: wifi_info.ssid
+        translation_key: key_wifi_ssid
+      #WiFi BSSID
+      - key: wifi_info.bssid
+        translation_key: key_wifi_bssid
+      #WiFi standard
+      #- key: 
+      #External IP
+      - key: network_info.client_public_ip
+        translation_key: key_client_public_ip
+      #Reverse DNS entry
+      - key: network_info.public_ip_rdns
+        translation_key: key_client_public_ip_rdns
+      #Hostnamewebmail
+      - key: network_info.public_ip_as_name
+        translation_key: key_client_public_ip_as_name
+      #NAT status
+      - key: network_info.nat_type
+        translation_key: key_nat_type
+      
+  #Device Information
+  - key: device_information_group
+    icon: g
+    values:
+      #Platform
+      - key: device_info.platform
+        translation_key: key_plattform
+      #Platform version
+      - key: device_info.os_version
+        translation_key: key_os_version
+      #Model (internal name)
+      - key: device_info.model
+      #Model (marketing name)
+      - key: device_info.fullname
+        translation_key: key_model
+      #Location
+      #- key: locations
+      #  translation_key: key_location
+      #Travelled distance and traveling speed
+      #- key: 
+      #RAM
+      #- key: extended_test_stat.mem_usage
+      #CPU 
+      #- key: extended_test_stat.cpu_usage
+      #Maximum device-specific WiFi speed 
+      - key: wifi_link_speed
+        translation_key: key_wifi_link_speed
+        unit: RESULT_WIFI_LINK_SPEED_UNIT
+        format: DIV_1000
+      #Test time
+      - key: client_info.time
+        translation_key: key_time
+      #Time zone of the device
+      #Time zone is added together with the client time for formatting reasons
+      #- key: client_info.timezone
+      #  translation_key: key_timezone
+      #Internal IP
+      - key: client_info.ip_local_type
+        translation_key: key_client_local_ip
+  #Speed Parameter
+  - key: speed_parameter_group
+    icon: b
+    values:
+      #Upload speed
+      - key: speedtest.speed_upload
+        unit: RESULT_UPLOAD_UNIT
+        format: DIV_1000
+      #Download speed
+      - key: speedtest.speed_download
+        unit: RESULT_DOWNLOAD_UNIT
+        format: DIV_1000
+      #Peak upload speed
+      #- key: 
+      #Peak download speed
+      #- key: 
+      #Ping
+      - key: speedtest.ping_median
+        unit: RESULT_PING_UNIT
+        format: DIV_1000000
+      #Ping variance
+      - key: speedtest.ping_variance
+        unit: RESULT_PING_UNIT
+        format: DIV_1000000000000
+      #Signal strength
+      - key: lte_rsrp
+        translation_key: key_signal_rsrp
+        unit: RESULT_SIGNAL_UNIT
+      #Signal quality
+      - key: lte_rsrq
+        translation_key: key_signal_rsrq
+        unit: RESULT_DB_UNIT
+      #Data amount
+      #dl
+      - key: speedtest.total_bytes_download
+        translation_key: key_total_bytes
+        unit: RESULT_TOTAL_BYTES_UNIT
+        format: DIV_1000000
+      #ul
+      - key: speedtest.total_bytes_upload
+        translation_key: key_total_bytes
+        unit: RESULT_TOTAL_BYTES_UNIT
+        format: DIV_1000000
+      #Data amount interface
+      #dl
+      - key: speedtest.interface_total_bytes_download
+        translation_key: key_total_if_bytes
+        unit: RESULT_TOTAL_BYTES_UNIT
+        format: DIV_1000000
+      #ul
+      - key: speedtest.interface_total_bytes_upload
+        translation_key: key_total_if_bytes
+        unit: RESULT_TOTAL_BYTES_UNIT
+        format: DIV_1000000
+      #Downloaded data on interface during download test - Data if_dl (dl_test)
+      - key: speedtest.interface_dltest_bytes_download
+        translation_key: key_testdl_if_bytes_download
+        unit: RESULT_TOTAL_BYTES_UNIT
+        format: DIV_1000000
+      #Downloaded data on interface during upload test - Data if_dl (ul_test)
+      - key: speedtest.interface_ultest_bytes_download
+        translation_key: key_testul_if_bytes_download
+        unit: RESULT_TOTAL_BYTES_UNIT
+        format: DIV_1000000
+      #Uploaded data on interface during download test - Data if_ul (dl_test)
+      - key: speedtest.interface_dltest_bytes_upload
+        translation_key: key_testdl_if_bytes_upload
+        unit: RESULT_TOTAL_BYTES_UNIT
+        format: DIV_1000000
+      #Uploaded data on interface during upload test - Data if_ul (ul_test)
+      - key: speedtest.interface_ultest_bytes_upload
+        translation_key: key_testul_if_bytes_upload
+        unit: RESULT_TOTAL_BYTES_UNIT
+        format: DIV_1000000
+      #Duration download
+      - key: speedtest.duration_download_ns
+        translation_key: key_duration_dl
+        unit: RESULT_DURATION_UNIT
+        format: DIV_1000000000
+      #Duration upload
+      - key: speedtest.duration_upload_ns
+        translation_key: key_duration_ul
+        unit: RESULT_DURATION_UNIT
+        format: DIV_1000000000
+      #Speed test duration
+      - key: speedtest.total_test_duration_ns
+        translation_key: key_speed_test_duration
+        unit: RESULT_DURATION_UNIT
+        format: DIV_1000000
+  #Test Specifications
+  - key: test_specifications_group
+    icon: p
+    values:
+      #Unique ID of the client
+      #Unique test ID
+      - key: open_test_uuid
+      #Testserver name
+      - key: speedtest.target_measurement_server.name
+        translation_key: key_server_name
+      #Testserver IP
+      - key: speedtest.target_measurement_server.ip
+        translation_key: key_server_ip
+      #TCP-port for measurement
+      - key: speedtest.target_measurement_server.port
+        translation_key: key_port
+      #SSL in use
+      - key: speedtest.encryption
+      #Nominal test duration
+      - key: speedtest.nominal_duration
+        translation_key: key_duration
+        unit: RESULT_DURATION_UNIT
+      #Number of threads
+      - key: speedtest.num_threads
+      #Parallel connetions DL/UL
+      - key: speedtest.num_threads_ul
+      #Software version
+      - key: client_info.software_version
+        translation_key: key_client_software_version
+      #Control server version
+      #- key: 
+    
+
+urls:
+  ipv4IpCheck: https://
+  ipv6IpCheck: https://
+  statistics: https://
+  opendataPrefix: https://
+
+mapServer:
+  host: 
+  port: 443
+  useSsl: true
+  
+advancedPosition:
+  enabled: false
+  options:
+    - value: indoor
+      translation_key: translation_key_indoor
+    - value: outdoor
+      translation_key: translation_key_outdoor
+  
+advertisedSpeeds:
+  - name: xdsl
+    minDownloadKbps: 0
+    maxDownloadKbps: 100000
+    minUploadKbps: 0
+    maxUploadKbps: 100000
+    enabled: true
+    
+  - name: ethernet
+    minDownloadKbps: 0
+    maxDownloadKbps: 1000000
+    minUploadKbps: 0
+    maxUploadKbps: 1000000
+    enabled: true
+    
+  - name: docsis
+    minDownloadKbps: 0
+    maxDownloadKbps: 400000
+    minUploadKbps: 0
+    maxUploadKbps: 108000
+    enabled: true

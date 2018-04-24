@@ -1,0 +1,27 @@
+apply from: '../old_jar_project.gradle'
+apply from: '../java8.gradle'
+
+dependencies {
+    compile project(':RMBTUtil')
+    
+    compile group: 'log4j', name: 'apache-log4j-extras', version: log4j_extras_version
+    compile group: 'org.apache.camel', name: 'camel-restlet', version: camel_restlet_version
+    compile group: 'org.json', name: 'json', version: org_json_version
+    compile group: 'org.postgresql', name: 'postgresql', version: postgresql_version
+}
+
+jar {
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+  
+    from('src/') {
+        include 'at/alladin/rmbt/qos/testserver/crt/qosserver.jks'
+    }
+
+    manifest {
+        attributes 'Main-Class': 'at.alladin.rmbt.qos.testserver.TestServer'
+    }
+}

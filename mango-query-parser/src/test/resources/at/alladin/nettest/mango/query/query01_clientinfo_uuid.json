@@ -1,0 +1,22 @@
+{
+	"selector": {
+		"$and":[
+			{
+				"$and": [
+					{"client_info": {"uuid": "4ac3cb84-05c4-4d51-9620-cf7a59aa5a27"}},
+					{"client_info": {"uuid":{"$eq":"4ac3cb84-05c4-4d51-9620-cf7a59aa5a27"}}},
+					{"client_info": {"uuid":{"$ne":null}}},
+					{"client_info.uuid": {"$regex": "4ac3cb84-[0-9]"}}
+				]
+			},
+			{
+				"$nor": [
+					{"client_info": {"uuid": "xyz"}},
+					{"client_info": {"uuid":{"$eq":"xyz"}}},
+					{"client_info": {"uuid":{"$eq":null}}},
+					{"client_info.uuid": {"$regex": "xyz"}}
+				]
+			}
+		]
+	}
+}

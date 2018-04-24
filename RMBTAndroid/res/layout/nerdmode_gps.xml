@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <at.alladin.rmbt.android.views.AlladinTextView
+        android:id="@+id/nerdmode_gps_image"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ifont_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Alladin.Nerdmode.Gps.Icon" />
+
+    <TextView
+        android:id="@+id/nerdmode_gps_location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/title_screen_empty"
+        style="@style/Alladin.Nerdmode.Title.Text" />
+
+</LinearLayout>
